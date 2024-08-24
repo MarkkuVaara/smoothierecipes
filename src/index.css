@@ -1,0 +1,62 @@
+
+h1 {
+    color: black;
+    font-size: 54px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2, h3, h4, b, p {
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+.mainapp {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.main {
+    text-align: justify;
+    height: 100%;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
