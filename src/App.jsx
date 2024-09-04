@@ -11,17 +11,23 @@ const App = () => {
   return (
 
     <div className="mainapp">
+      <Router>
       <div className="banner">
         <img className="applelogo" src={logo} alt={logo} />
-        <h3>Home</h3>
-        <h3>Recipes</h3>
-        <h3>About us</h3>
-        <h3>Blog</h3>
+        <Link to="/" style={{ textDecoration: 'none' }}><h3>Home</h3></Link>
+        <Link to="/recipes" style={{ textDecoration: 'none' }}><h3>Recipes</h3></Link>
+        <Link to="/about" style={{ textDecoration: 'none' }}><h3>About us</h3></Link>
+        <Link to="/blog" style={{ textDecoration: 'none' }}><h3>Blog</h3></Link>
       </div>
       <div className="main">
-        <h1>Recipes here</h1>
-        <p>Lorem ipsum</p>
+        <Routes>
+          <Route path="/" element={<div><h3>Home</h3></div>} />
+          <Route path="/recipes" element={<div><h3>Recipes</h3></div>} />
+          <Route path="/about" element={<div><h3>About us</h3></div>} />
+          <Route path="/blog" element={<div><h3>Our blog</h3></div>} />
+        </Routes>
       </div>
+      </Router>
     </div>
 
   )
