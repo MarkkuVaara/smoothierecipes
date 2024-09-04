@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
+import logo from '../images/apple_logo.png';
 
 const About = () => {
 
     return (
-        <div>
-            <h3>Meet tne team</h3>
-            <p>Sauli Holappa</p>
-            <p>Markku Vaara</p>
+        <div className="aboutpage">
+            <div className="person">
+                <img className="applelogo" src={logo} alt={logo} />
+                <p>Sauli Holappa</p>
+            </div>
+            <div className="person">
+                <p>Markku Vaara</p>
+                <img className="applelogo" src={logo} alt={logo} />
+            </div>
         </div>
     )
 }

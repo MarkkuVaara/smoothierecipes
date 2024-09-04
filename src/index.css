@@ -66,6 +66,32 @@ p {
 }
 
 .applelogo {
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
+}
+
+.frontpage {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.smoothieimage {
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 400px;
+    width: 400px;
+}
+
+.aboutpage {
+    padding-top: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding-bottom: 20px;
 }
