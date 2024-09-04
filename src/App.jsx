@@ -13,16 +13,23 @@ import Blog from './components/Blog';
 
 const App = () => {
 
+  const [subtitle, setSubtitle] = useState(<h3>Welcome to the FRUITY FUEL!</h3>);
+
   return (
 
     <div className="mainapp">
       <Router>
       <div className="banner">
-        <img className="applelogo" src={logo} alt={logo} />
-        <Link to="/" style={{ textDecoration: 'none' }}><h3>Home</h3></Link>
-        <Link to="/recipes" style={{ textDecoration: 'none' }}><h3>Recipes</h3></Link>
-        <Link to="/about" style={{ textDecoration: 'none' }}><h3>About us</h3></Link>
-        <Link to="/blog" style={{ textDecoration: 'none' }}><h3>Blog</h3></Link>
+        <div>
+          <img className="applelogo" src={logo} alt={logo} />
+        </div>
+        <Link to="/" onClick={() => setSubtitle(<h3>Welcome to the FRUITY FUEL!</h3>)} style={{ textDecoration: 'none' }}><h3>Home</h3></Link>
+        <Link to="/recipes" onClick={() => setSubtitle(<h3>Banana Blueberry Strawberry</h3>)} style={{ textDecoration: 'none' }}><h3>Recipes</h3></Link>
+        <Link to="/about" onClick={() => setSubtitle(<h3>Meet the Team</h3>)} style={{ textDecoration: 'none' }}><h3>About us</h3></Link>
+        <Link to="/blog" onClick={() => setSubtitle(<h3>Blog</h3>)} style={{ textDecoration: 'none' }}><h3>Blog</h3></Link>
+      </div>
+      <div className="subtitle">
+        {subtitle}
       </div>
       <div className="main">
         <Routes>

@@ -27,21 +27,18 @@ p {
 
 
 .mainapp {
-    
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: 100% 100%;
 }
 
-.title {
-    display: flex;
-    justify-content: space-between;
+.subtitle {
     text-align: center;
     padding-left: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: 2px solid lightgray;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-bottom: 10px solid lightgray;
 }
 
 .banner {
@@ -54,7 +51,6 @@ p {
     margin-top: 20px;
     margin-left: 1%;
     margin-right: 1%;
-    border: 2px solid lightgray;
 }
 
 .main {
@@ -66,7 +62,7 @@ p {
     margin-top: 20px;
     margin-left: 1%;
     margin-right: 1%;
-    border: 2px solid lightgray;
+    /* border: 2px solid lightgray; */
 }
 
 .applelogo {
