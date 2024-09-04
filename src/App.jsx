@@ -6,6 +6,11 @@ import {
 } from 'react-router-dom';
 import logo from './images/apple_logo.png';
 
+import Home from './components/Home';
+import Recipes from './components/Recipes';
+import About from './components/About';
+import Blog from './components/Blog';
+
 const App = () => {
 
   return (
@@ -21,10 +26,10 @@ const App = () => {
       </div>
       <div className="main">
         <Routes>
-          <Route path="/" element={<div><h3>Home</h3></div>} />
-          <Route path="/recipes" element={<div><h3>Recipes</h3></div>} />
-          <Route path="/about" element={<div><h3>About us</h3></div>} />
-          <Route path="/blog" element={<div><h3>Our blog</h3></div>} />
+          <Route path="/" element={<div><Home/></div>} />
+          <Route path="/recipes" element={<div><Recipes/></div>} />
+          <Route path="/about" element={<div><About/></div>} />
+          <Route path="/blog" element={<div><Blog/></div>} />
         </Routes>
       </div>
       </Router>
