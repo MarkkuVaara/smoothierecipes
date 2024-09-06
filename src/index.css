@@ -1,32 +1,35 @@
 
 h1 {
-    color: black;
+    color: #A4D64D;
     font-size: 64px;
     font-family: 'Playfair Display SC', sans-serif;
 }
 
 h2 {
-    color: black;
+    color: #A4D64D;
     font-size: 40px;
     font-family: 'Playfair Display SC', sans-serif;
 }
 
 h3 {
-    color: black;
+    color: #A4D64D;
     font-size: 30px;
     font-family: 'Playfair Display SC', sans-serif;
 }
 
 h4 {
+    color: #A4D64D;
     font-size: 20px;
 }
 
 p {
+    color: #A4D64D;
     font-size: 18px;
 }
 
 
 .mainapp {
+    background-image: url("./images/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -93,5 +96,6 @@ p {
     display: flex;
     justify-content: space-between;
     text-align: justify;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border: 3px solid yellowgreen;
 }
