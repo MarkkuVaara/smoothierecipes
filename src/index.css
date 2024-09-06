@@ -1,4 +1,6 @@
 
+/* Fonts */
+
 h1 {
     color: #A4D64D;
     font-size: 64px;
@@ -28,6 +30,8 @@ p {
 }
 
 
+/* Main styles */
+
 .mainapp {
     background-image: url("./images/background.jpg");
     background-repeat: no-repeat;
@@ -41,7 +45,7 @@ p {
     padding-left: 10px;
     margin-left: 1%;
     margin-right: 1%;
-    border-bottom: 10px solid lightgray;
+    border-bottom: 10px solid #A4D64D;
 }
 
 .banner {
@@ -73,6 +77,9 @@ p {
     width: 120px;
 }
 
+
+/* Frontpage */
+
 .frontpage {
     display: flex;
     justify-content: space-between;
@@ -86,6 +93,16 @@ p {
     width: 400px;
 }
 
+.fronttext {
+    margin: 20px;
+    padding: 30px;
+    border: 5px solid #A4D64D;
+    border-radius: 10px;
+}
+
+
+/* Aboutpage */
+
 .aboutpage {
     padding-top: 50px;
     margin-left: 30%;
@@ -97,5 +114,21 @@ p {
     justify-content: space-between;
     text-align: justify;
     margin-bottom: 20px;
-    border: 3px solid yellowgreen;
+    padding: 10px;
+    border: 3px solid #A4D64D;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.persontwo {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 3px solid #A4D64D;
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
