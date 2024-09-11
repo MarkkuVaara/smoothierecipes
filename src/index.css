@@ -4,29 +4,31 @@
 h1 {
     color: #A4D64D;
     font-size: 64px;
-    font-family: 'Playfair Display SC', sans-serif;
+    font-family: 'Playfair Display SC', serif;
 }
 
 h2 {
     color: #A4D64D;
     font-size: 40px;
-    font-family: 'Playfair Display SC', sans-serif;
+    font-family: 'Playfair Display SC', serif;
 }
 
 h3 {
     color: #A4D64D;
     font-size: 30px;
-    font-family: 'Playfair Display SC', sans-serif;
+    font-family: 'Playfair Display SC', serif;
 }
 
 h4 {
-    color: #A4D64D;
+    color: white;
     font-size: 20px;
+    font-family: 'Playfair Display SC', serif;
 }
 
 p {
     color: #A4D64D;
     font-size: 18px;
+    font-family: 'Playfair Display SC', serif;
 }
 
 
@@ -46,6 +48,7 @@ p {
     margin-left: 1%;
     margin-right: 1%;
     border-bottom: 15px solid #A4D64D;
+    font-family: 'Playfair Display SC', serif;
 }
 
 .banner {
