@@ -184,7 +184,7 @@ p {
     margin-top: 30px;
     margin-left: 5%;
     margin-right: 5%;
-    width: 150px;
+    width: 200px;
     border: 5px solid #A4D64D;
     border-radius: 50px;
 }
@@ -206,4 +206,42 @@ p {
 .blog > h3,
 .blog > p {
     color: white;
+}
+
+
+/* Recipies page */
+
+.recipiespage {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.recipe {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.recipeimage {
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 400px;
+    width: 400px;
+    border: 5px solid #A4D64D;
+    border-radius: 60px;
+}
+
+.recipetext {
+    min-width: 50%;
+    max-width: 70%;
+}
+
+.rectext {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    color: white;
+    border: 5px solid #A4D64D;
+    border-radius: 60px;
 }
