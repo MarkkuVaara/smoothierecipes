@@ -50,7 +50,7 @@ const App = () => {
         </Routes>
       </div>
       <div className="footer">
-        <h4>Footer</h4>
+        <h4>FOLLOW US ON VARIOUS LOCATIONS</h4>
         <img className="footerimage" src={xxx} alt={xxx}></img>
         <img className="footerimage" src={fbook} alt={fbook}></img>
         <img className="footerimage" src={lin} alt={lin}></img>

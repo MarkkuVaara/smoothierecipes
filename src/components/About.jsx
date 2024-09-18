@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../images/apple_logo.png';
+import markkuvaara from '../images/Markku Vaara.jpg';
 
 const About = () => {
 
@@ -17,7 +18,7 @@ const About = () => {
                     <h3>MARKKU VAARA, DEVELOPER</h3>
                     <p>Markku believes in clean, efficient, and scalable code. By focusing on performance, security, and maintainability, he ensures that every line of code contributes to a robust and reliable product. From implementing complex features to optimizing performance, he has played a crucial role in bringing the current project to life.</p>
                 </div>
-                <img className="personimage" src={logo} alt={logo} />
+                <img className="personimage" src={markkuvaara} alt={markkuvaara} />
             </div>
         </div>
     )
