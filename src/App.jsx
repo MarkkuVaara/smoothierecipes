@@ -1,10 +1,15 @@
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Routes, Route, Link
 } from 'react-router-dom';
 import logo from './images/apple_logo.png';
+import xxx from './images/xxxxx.jpg';
+import fbook from './images/fbook.jpg';
+import lin from './images/lin.jpg';
+import ttok from './images/ttok.jpg';
+import insgram from './images/insgram.jpg';
 
 import Home from './components/Home';
 import Recipes from './components/Recipes';
@@ -43,6 +48,14 @@ const App = () => {
           <Route path="/about" element={<div><About/></div>} />
           <Route path="/blog" element={<div><Blog/></div>} />
         </Routes>
+      </div>
+      <div className="footer">
+        <h4>Footer</h4>
+        <img className="footerimage" src={xxx} alt={xxx}></img>
+        <img className="footerimage" src={fbook} alt={fbook}></img>
+        <img className="footerimage" src={lin} alt={lin}></img>
+        <img className="footerimage" src={ttok} alt={ttok}></img>
+        <img className="footerimage" src={insgram} alt={insgram}></img>
       </div>
       </Router>
     </div>

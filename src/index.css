@@ -184,7 +184,8 @@ p {
     margin-top: 30px;
     margin-left: 5%;
     margin-right: 5%;
-    width: 200px;
+    height: 375px;
+    width: 250px;
     border: 5px solid #A4D64D;
     border-radius: 50px;
 }
@@ -227,10 +228,10 @@ p {
     margin-top: 50px;
     margin-left: 5%;
     margin-right: 5%;
-    height: 400px;
-    width: 400px;
+    height: 410px;
+    width: 445px;
     border: 5px solid #A4D64D;
-    border-radius: 60px;
+    border-radius: 55px;
 }
 
 .recipetext {
@@ -252,6 +253,9 @@ p {
     border-radius: 60px;
 }
 
+
+/* Subpage navigation */
+
 .subpagenav {
     display: flex;
     justify-content: space-evenly;
@@ -264,4 +268,34 @@ p {
     margin-left: 20px;
     background-color: transparent;
     border: 0px;
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    height: 70px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-top: 5px solid #A4D64D;
+}
+
+.footer > * {
+    margin-right: 15px;
+}
+
+.footer > h4 {
+    margin-right: 30px;
+}
+
+.footerimage {
+    margin-top: 25px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #A4D64D;
+    border-radius: 20px;
 }
