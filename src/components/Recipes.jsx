@@ -5,8 +5,11 @@ import Strawberry from '../images/strawberry.jpg';
 
 const Recipes = (props) => {
 
+    const subpage = props.subpage;
+
     return (
         <div className="recipiespage">
+            {subpage == "banana" &&
             <div className="recipe">
                 <img className="recipeimage" src={Banana} alt={Banana} />
                 <div className="recipetext">
@@ -29,6 +32,8 @@ const Recipes = (props) => {
                     </div>
                 </div>
             </div>
+            }
+            {subpage == "blueberry" &&
             <div className="recipe">
                 <img className="recipeimage" src={Blueberry} alt={Blueberry} />
                 <div className="recipetext">
@@ -51,6 +56,8 @@ const Recipes = (props) => {
                     </div>
                 </div>
             </div>
+            }
+            {subpage == "strawberry" &&
             <div className="recipe">
                 <img className="recipeimage" src={Strawberry} alt={Strawberry} />
                 <div className="recipetext">
@@ -73,6 +80,7 @@ const Recipes = (props) => {
                     </div>
                 </div>
             </div>
+            }
         </div>
     )
 }
