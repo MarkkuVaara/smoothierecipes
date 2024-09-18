@@ -220,10 +220,11 @@ p {
     display: flex;
     justify-content: space-between;
     text-align: justify;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .recipeimage {
+    margin-top: 50px;
     margin-left: 5%;
     margin-right: 5%;
     height: 400px;
@@ -237,10 +238,15 @@ p {
     max-width: 70%;
 }
 
+.recipetext > h3 {
+    color: white;
+    text-align: center;
+}
+
 .rectext {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    padding-left: 30px;
     color: white;
     border: 5px solid #A4D64D;
     border-radius: 60px;
