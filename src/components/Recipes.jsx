@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 import Banana from '../images/banana.jpg';
 import Blueberry from '../images/blueberry.jpg';
 import Strawberry from '../images/strawberry.jpg';
+import leftarrow from '../images/leftarrow.jpg';
+import rightarrow from '../images/rightarrow.jpg';
 
-const Recipes = (props) => {
-
-    const subpage = props.subpage;
+const Recipes = ({ subpage }) => {
 
     return (
         <div className="recipiespage">
-            {subpage == "banana" &&
+            <Slider dots={true} infinite = {true} speed = {500} slidesToShow = {1}
+                slidesToScroll = {1} autoplay = {false} autoplaySpeed = {3000} initialSlide = {subpage} key={subpage}>
             <div className="recipe">
                 <img className="recipeimage" src={Banana} alt={Banana} />
                 <div className="recipetext">
@@ -32,8 +37,6 @@ const Recipes = (props) => {
                     </div>
                 </div>
             </div>
-            }
-            {subpage == "blueberry" &&
             <div className="recipe">
                 <img className="recipeimage" src={Blueberry} alt={Blueberry} />
                 <div className="recipetext">
@@ -56,8 +59,6 @@ const Recipes = (props) => {
                     </div>
                 </div>
             </div>
-            }
-            {subpage == "strawberry" &&
             <div className="recipe">
                 <img className="recipeimage" src={Strawberry} alt={Strawberry} />
                 <div className="recipetext">
@@ -80,7 +81,11 @@ const Recipes = (props) => {
                     </div>
                 </div>
             </div>
-            }
+            </Slider>
+            <div className="arrows">
+                <img className="arrowimage" src={leftarrow} alt={leftarrow}></img>
+                <img className="arrowimage" src={rightarrow} alt={rightarrow}></img>
+            </div>
         </div>
     )
 }

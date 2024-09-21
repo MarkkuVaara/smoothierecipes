@@ -11,8 +11,6 @@ import fbook from './images/fbook.jpg';
 import lin from './images/lin.jpg';
 import ttok from './images/ttok.jpg';
 import insgram from './images/insgram.jpg';
-import leftarrow from './images/leftarrow.jpg';
-import rightarrow from './images/rightarrow.jpg';
 
 import Home from './components/Home';
 import Recipes from './components/Recipes';
@@ -22,42 +20,42 @@ import Blog from './components/Blog';
 const App = () => {
 
   const [subtitle, setSubtitle] = useState(<h3>WELCOME TO THE FRUITY FUEL!</h3>);
-  const [subpage, setSubpage] = useState("banana");
+  const [subpage, setSubpage] = useState(0);
 
   return (
 
     <div className="mainapp">
       <Router>
+
       <div className="banner">
         <div>
           <img className="applelogo" src={logo} alt={logo} />
         </div>
         <Link to="/" onClick={() => setSubtitle(<h3>WELCOME TO THE FRUITY FUEL!</h3>)} style={{ textDecoration: 'none' }}><h2>HOME</h2></Link>
         <Link to="/recipes" onClick={() => setSubtitle(<div className="subpagenav">
-            <button onClick={() => setSubpage("banana")}><h3>BANANA</h3></button> 
-            <button onClick={() => setSubpage("blueberry")}><h3>BLUEBERRY</h3></button> 
-            <button onClick={() => setSubpage("strawberry")}><h3>STRAWBERRY</h3></button>
+            <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button> 
+            <button onClick={() => setSubpage(1)}><h3>BLUEBERRY</h3></button> 
+            <button onClick={() => setSubpage(2)}><h3>STRAWBERRY</h3></button>
           </div>)} style={{ textDecoration: 'none' }}><h2>RECIPIES</h2></Link>
         <Link to="/about" onClick={() => setSubtitle(<h3>MEET THE TEAM</h3>)} style={{ textDecoration: 'none' }}><h2>ABOUT US</h2></Link>
         <Link to="/blog" onClick={() => setSubtitle(<h3>SMOOTHIE BLOG</h3>)} style={{ textDecoration: 'none' }}><h2>BLOG</h2></Link>
       </div>
+
       <div className="subtitle">
         {subtitle}
       </div>
+
       <div className="main">
         <Routes>
           <Route path="/" element={<div><Home/></div>} />
           <Route path="/recipes" element={<div>
               <Recipes subpage={subpage}/>
-              <div className="arrows">
-                <img className="arrowimage" src={leftarrow} alt={leftarrow}></img>
-                <img className="arrowimage" src={rightarrow} alt={rightarrow}></img>
-              </div>
             </div>} />
           <Route path="/about" element={<div><About/></div>} />
           <Route path="/blog" element={<div><Blog/></div>} />
         </Routes>
       </div>
+
       <div className="footer">
         <h4>FOLLOW US ON VARIOUS LOCATIONS</h4>
         <img className="footerimage" src={xxx} alt={xxx}></img>
