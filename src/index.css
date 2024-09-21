@@ -87,9 +87,11 @@ p {
     display: flex;
     justify-content: space-between;
     text-align: justify;
+    margin-top: 20px;
 }
 
 .smoothieimage {
+    margin-top: 20px;
     margin-left: 5%;
     margin-right: 5%;
     height: 400px;
@@ -176,6 +178,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     text-align: justify;
+    margin-top: 20px;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -222,14 +225,14 @@ p {
 }
 
 .recipe {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     text-align: justify;
     margin-top: 20px;
 }
 
 .recipeimage {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 5%;
     margin-right: 5%;
     height: 410px;
@@ -252,9 +255,13 @@ p {
     margin-top: 20px;
     padding: 20px;
     padding-left: 30px;
-    color: white;
     border: 5px solid #A4D64D;
     border-radius: 60px;
+}
+
+.rectext > h4,
+.rectext > strong > h4 {
+    color: white;
 }
 
 
@@ -305,10 +312,6 @@ p {
 }
 
 .footer > * {
-    margin-right: 15px;
-}
-
-.footer > h4 {
     margin-right: 30px;
 }
 

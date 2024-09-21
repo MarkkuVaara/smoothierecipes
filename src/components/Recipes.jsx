@@ -13,27 +13,27 @@ const Recipes = ({ subpage }) => {
 
     return (
         <div className="recipiespage">
-            <Slider dots={true} infinite = {true} speed = {500} slidesToShow = {1}
-                slidesToScroll = {1} autoplay = {false} autoplaySpeed = {3000} initialSlide = {subpage} key={subpage}>
+            <Slider dots={false} infinite={true} speed={500} slidesToShow={1}
+                slidesToScroll={1} autoplay={false} autoplaySpeed={3000} initialSlide={subpage} key={subpage}>
             <div className="recipe">
                 <img className="recipeimage" src={Banana} alt={Banana} />
                 <div className="recipetext">
                     <h3>BANANAAAAAA!</h3>
                     <div className="rectext">
-                        <strong><p>Ingredients:</p></strong>
-                        <p>- 1 ripe banana</p>
-                        <p>- 1 cup of milk (or almond milk for a dairy-free option)</p>
-                        <p>- 1/2 cup yogurt (plain or vanilla)</p>
-                        <p>- 1 tablespoon honey or maple syrup (optional)</p>
-                        <p>- A handful of ice cubes</p>
+                        <strong><h4>Ingredients:</h4></strong>
+                        <h4>- 1 ripe banana</h4>
+                        <h4>- 1 cup of milk (or almond milk for a dairy-free option)</h4>
+                        <h4>- 1/2 cup yogurt (plain or vanilla)</h4>
+                        <h4>- 1 tablespoon honey or maple syrup (optional)</h4>
+                        <h4>- A handful of ice cubes</h4>
                     </div>
                     <div className="rectext">
-                        <strong><p>Instructions:</p></strong>
-                        <p>1. Peel the banana and place it to the blender.</p>
-                        <p>2. Add the milk, yogurt, and honey or maple syrup if you want a bit of sweetness.</p>
-                        <p>3. Toss in a handful of ice cubes.</p>
-                        <p>4. Blend until smooth and creamy.</p>
-                        <p>5. Pour into a glass and enjoy!</p>
+                        <strong><h4>Instructions:</h4></strong>
+                        <h4>1. Peel the banana and place it to the blender.</h4>
+                        <h4>2. Add the milk, yogurt, and honey or maple syrup if you want a bit of sweetness.</h4>
+                        <h4>3. Toss in a handful of ice cubes.</h4>
+                        <h4>4. Blend until smooth and creamy.</h4>
+                        <h4>5. Pour into a glass and enjoy!</h4>
                     </div>
                 </div>
             </div>
@@ -42,20 +42,20 @@ const Recipes = ({ subpage }) => {
                 <div className="recipetext">
                     <h3>Blueberriesss!!!</h3>
                     <div className="rectext">
-                        <strong><p>Ingredients:</p></strong>
-                        <p>- 1 cup of fresh or frozen blueberries</p>
-                        <p>- 1 cup of milk (or almond milk for a dairy-free option)</p>
-                        <p>- 1/2 cup yogurt (plain or vanilla)</p>
-                        <p>- 1 tablespoon honey or maple syrup (optional)</p>
-                        <p>- A handful of ice cubes</p>
+                        <strong><h4>Ingredients:</h4></strong>
+                        <h4>- 1 cup of fresh or frozen blueberries</h4>
+                        <h4>- 1 cup of milk (or almond milk for a dairy-free option)</h4>
+                        <h4>- 1/2 cup yogurt (plain or vanilla)</h4>
+                        <h4>- 1 tablespoon honey or maple syrup (optional)</h4>
+                        <h4>- A handful of ice cubes</h4>
                     </div>
                     <div className="rectext">
-                        <strong><p>Instructions:</p></strong>
-                        <p>1. Place the blueberries in a blender.</p>
-                        <p>2. Add the milk, yogurt, and honey or maple syrup if you want a bit of sweetness.</p>
-                        <p>3. Toss in a handful of ice cubes.</p>
-                        <p>4. Blend until smooth and creamy.</p>
-                        <p>5. Pour into a glass and enjoy!</p>
+                        <strong><h4>Instructions:</h4></strong>
+                        <h4>1. Place the blueberries in a blender.</h4>
+                        <h4>2. Add the milk, yogurt, and honey or maple syrup if you want a bit of sweetness.</h4>
+                        <h4>3. Toss in a handful of ice cubes.</h4>
+                        <h4>4. Blend until smooth and creamy.</h4>
+                        <h4>5. Pour into a glass and enjoy!</h4>
                     </div>
                 </div>
             </div>
@@ -64,20 +64,20 @@ const Recipes = ({ subpage }) => {
                 <div className="recipetext">
                     <h3>Strawberryyy!!!</h3>
                     <div className="rectext">
-                        <strong><p>Ingredients:</p></strong>
-                        <p>- 1 cup of fresh or frozen strawberries</p>
-                        <p>- 1 cup of milk (or almond milk for a dairy-free option)</p>
-                        <p>- 1/2 cup yogurt (plain or vanilla)</p>
-                        <p>- 1 tablespoon honey or maple syrup (optional)</p>
-                        <p>- A handful of ice cubes</p>
+                        <strong><h4>Ingredients:</h4></strong>
+                        <h4>- 1 cup of fresh or frozen strawberries</h4>
+                        <h4>- 1 cup of milk (or almond milk for a dairy-free option)</h4>
+                        <h4>- 1/2 cup yogurt (plain or vanilla)</h4>
+                        <h4>- 1 tablespoon honey or maple syrup (optional)</h4>
+                        <h4>- A handful of ice cubes</h4>
                     </div>
                     <div className="rectext">
-                        <strong><p>Instructions:</p></strong>
-                        <p>1. Place the strawberries in the blender.</p>
-                        <p>2. Add the milk, yogurt, and honey or maple syrup if you want a bit of sweetness.</p>
-                        <p>3. Toss in a handful of ice cubes.</p>
-                        <p>4. Blend until smooth and creamy.</p>
-                        <p>5. Pour into a glass and enjoy!</p>
+                        <strong><h4>Instructions:</h4></strong>
+                        <h4>1. Place the strawberries in the blender.</h4>
+                        <h4>2. Add the milk, yogurt, and honey or maple syrup if you want a bit of sweetness.</h4>
+                        <h4>3. Toss in a handful of ice cubes.</h4>
+                        <h4>4. Blend until smooth and creamy.</h4>
+                        <h4>5. Pour into a glass and enjoy!</h4>
                     </div>
                 </div>
             </div>
