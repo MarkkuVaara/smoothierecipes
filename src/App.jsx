@@ -4,12 +4,15 @@ import {
   BrowserRouter as Router,
   Routes, Route, Link
 } from 'react-router-dom';
+
 import logo from './images/apple_logo.png';
 import xxx from './images/xxxxx.jpg';
 import fbook from './images/fbook.jpg';
 import lin from './images/lin.jpg';
 import ttok from './images/ttok.jpg';
 import insgram from './images/insgram.jpg';
+import leftarrow from './images/leftarrow.jpg';
+import rightarrow from './images/rightarrow.jpg';
 
 import Home from './components/Home';
 import Recipes from './components/Recipes';
@@ -44,7 +47,13 @@ const App = () => {
       <div className="main">
         <Routes>
           <Route path="/" element={<div><Home/></div>} />
-          <Route path="/recipes" element={<div><Recipes subpage={subpage}/></div>} />
+          <Route path="/recipes" element={<div>
+              <Recipes subpage={subpage}/>
+              <div className="arrows">
+                <img className="arrowimage" src={leftarrow} alt={leftarrow}></img>
+                <img className="arrowimage" src={rightarrow} alt={rightarrow}></img>
+              </div>
+            </div>} />
           <Route path="/about" element={<div><About/></div>} />
           <Route path="/blog" element={<div><Blog/></div>} />
         </Routes>
