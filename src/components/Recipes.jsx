@@ -16,7 +16,7 @@ const Recipes = ({ subpage }) => {
             <Slider dots={false} infinite={true} speed={500} slidesToShow={1}
                 slidesToScroll={1} autoplay={false} autoplaySpeed={3000} initialSlide={subpage} key={subpage}>
             <div className="recipe">
-                <img className="recipeimage" src={Banana} alt={Banana} />
+                <img className="recipeimage" src={Banana} alt={Banana} title="Banana smoothie in a jar" />
                 <div className="recipetext">
                     <h3>BANANAAAAAA!</h3>
                     <div className="rectext">
@@ -38,7 +38,7 @@ const Recipes = ({ subpage }) => {
                 </div>
             </div>
             <div className="recipe">
-                <img className="recipeimage" src={Blueberry} alt={Blueberry} />
+                <img className="recipeimage" src={Blueberry} alt={Blueberry} title="Blueberry smoothie in a jar" />
                 <div className="recipetext">
                     <h3>Blueberriesss!!!</h3>
                     <div className="rectext">
@@ -60,7 +60,7 @@ const Recipes = ({ subpage }) => {
                 </div>
             </div>
             <div className="recipe">
-                <img className="recipeimage" src={Strawberry} alt={Strawberry} />
+                <img className="recipeimage" src={Strawberry} alt={Strawberry} title="Strawberry smoothie in a jar" />
                 <div className="recipetext">
                     <h3>Strawberryyy!!!</h3>
                     <div className="rectext">

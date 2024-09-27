@@ -7,12 +7,12 @@ const Blog = () => {
     return (
         <div className="blogpage">
             <div className="blogimages">
-                <img className="blogimage" src={Blogimage1} alt={Blogimage1} />
-                <img className="blogimage" src={Blogimage2} alt={Blogimage2} />
+                <img className="blogimage" src={Blogimage1} alt={Blogimage1} title="Simple smoothies in glass bottles" />
+                <img className="blogimage" src={Blogimage2} alt={Blogimage2} title="Banana and strawberry smoothies in jars" />
             </div>
             <div className="blogs">
                 <div className="blog">
-                    <h3>Blog 1</h3>
+                    <h3>Blog post 1</h3>
                     <p><strong>**Kickstart Your Day with a Berrylicious Smoothie**</strong></p>
                     <p>Smoothies are the ultimate way to start your day with a burst of energy. 
                         A classic favorite is the strawberry smoothie - simple, delicious, and packed with nutrients. 
@@ -25,7 +25,7 @@ const Blog = () => {
                     </p>
                 </div>
                 <div className="blog">
-                    <h3>Blog 2</h3>
+                    <h3>Blog post 2</h3>
                     <p><strong>**Why Smoothies Are You New Best Friend **</strong></p>
                     <p>If you're looking for a quick and easy way to pack more fruits and veggies into your diet,
                         smoothies are your new best friend. Not only are they incredibly versatile, but they're also a 
@@ -38,11 +38,11 @@ const Blog = () => {
                     </p>
                 </div>
                 <div className="blog">
-                    <h3>Blog 3</h3>
+                    <h3>Blog post 3</h3>
                     <p><strong>**More to come**</strong></p>
                 </div>
                 <div className="blog">
-                    <h3>Blog 4</h3>
+                    <h3>Blog post 4</h3>
                     <p><strong>**More to come**</strong></p>
                 </div>
             </div>
