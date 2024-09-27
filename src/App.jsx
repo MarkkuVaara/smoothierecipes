@@ -16,11 +16,17 @@ import Home from './components/Home';
 import Recipes from './components/Recipes';
 import About from './components/About';
 import Blog from './components/Blog';
+import Popup from './components/Popup';
 
 const App = () => {
 
   const [subtitle, setSubtitle] = useState(<h3>WELCOME TO THE FRUITY FUEL!</h3>);
   const [subpage, setSubpage] = useState(0);
+  const [popUp, setPopUp] = useState('');
+
+  const togglePopUp = (dataName) => {
+    setPopUp(dataName);
+  };
 
   return (
 
