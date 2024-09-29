@@ -22,7 +22,7 @@ const App = () => {
 
   const [subtitle, setSubtitle] = useState(<h3>WELCOME TO THE FRUITY FUEL!</h3>);
   const [subpage, setSubpage] = useState(0);
-  const [popUp, setPopUp] = useState('');
+  const [popUp, setPopUp] = useState("startwindow");
 
   const togglePopUp = (dataName) => {
     setPopUp(dataName);
@@ -70,6 +70,11 @@ const App = () => {
         <img className="footerimage" src={ttok} alt={ttok}></img>
         <img className="footerimage" src={insgram} alt={insgram}></img>
       </div>
+      
+      {popUp == "startwindow" &&
+        <Popup handleClose={togglePopUp} />
+      }
+
       </Router>
     </div>
 
