@@ -346,24 +346,25 @@ p {
     margin: 0 auto;
     height: 100%;
     background: black;
-    padding: 60px;
+    padding-top: 60px;
     text-align: center;
     border: 1px solid black;
     overflow: auto;
 }
 
+.box > h1 {
+    margin: 0px;
+    font-size: 96px;
+}
+
 .close-icon {
-    content: 'X';
     cursor: pointer;
-    right: calc(50%);
+    right: calc(45%);
     top: calc(100vh - 90vh - 33px);
-    background: #ededed;
     width: 35px;
     height: 35px;
-    border-radius: 10%;
     line-height: 30px;
     text-align: center;
-    border: 3px solid #999;
     font-size: 30px;
 }
 
@@ -372,14 +373,9 @@ p {
     width: 250px;
 }
 
-.content {
-    display: flex;
-}
-
-.content > * {
-    margin: .1em;
-    padding: .3em;
-    flex: 1;
+.startarrow {
+    height: 116px;
+    width: 126px;
 }
 
 
@@ -414,4 +410,14 @@ p {
     text-align: center;
     border: 3px solid #999;
     font-size: 30px;
+}
+
+.newsletter-content {
+    display: flex;
+}
+
+.newsletter-content > * {
+    margin: .1em;
+    padding: .3em;
+    flex: 1;
 }

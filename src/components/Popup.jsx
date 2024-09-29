@@ -7,11 +7,11 @@ const Popup = (props) => {
   return (
     <div className="popup-box">
       <div className="box">      
-        <h1>Fruity</h1>
+        <h1>FRUITY</h1>
         <img className="startlogo" src={Apple} alt={Apple}></img>
-        <h1>Fuel</h1>
+        <h1>FUEL</h1>
         <span className="close-icon" onClick={props.handleClose}>
-          <img src={Arrow} alt={Arrow}></img>
+          <img className="startarrow" src={Arrow} alt={Arrow}></img>
         </span>
       </div>
     </div>
