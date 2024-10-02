@@ -369,13 +369,30 @@ p {
 }
 
 .startlogo {
+    margin: 0px;
+    margin-top: 15px;
     height: 250px;
     width: 250px;
+    transition: width 0.3s ease-out;
 }
 
 .startarrow {
     height: 116px;
     width: 126px;
+}
+
+
+/* Newsletter image */
+
+.newsletter {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.letterimage {
+    height: 160px;
+    width: 240px;
+    border-radius: 20px;
 }
 
 
