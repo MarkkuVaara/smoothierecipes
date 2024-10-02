@@ -358,12 +358,10 @@ p {
 }
 
 .close-icon {
-    cursor: pointer;
-    right: calc(45%);
-    top: calc(100vh - 90vh - 33px);
-    width: 35px;
-    height: 35px;
-    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: center;
     font-size: 30px;
 }
@@ -373,10 +371,24 @@ p {
     margin-top: 15px;
     height: 250px;
     width: 250px;
-    transition: width 0.3s ease-out;
+    animation: fadeInOut 2s infinite;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
 }
 
 .startarrow {
+    cursor: pointer;
     height: 116px;
     width: 126px;
 }

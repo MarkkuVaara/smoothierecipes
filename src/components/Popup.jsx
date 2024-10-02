@@ -10,9 +10,10 @@ const Popup = (props) => {
         <h1>FRUITY</h1>
         <img className="startlogo" src={Apple} alt={Apple}></img>
         <h1>FUEL</h1>
-        <span className="close-icon" onClick={props.handleClose}>
-          <img className="startarrow" src={Arrow} alt={Arrow}></img>
-        </span>
+        <div className="close-icon">
+          <h2 className="close-icontext">Step in</h2>
+          <img className="startarrow" src={Arrow} alt={Arrow} onClick={props.handleClose} ></img>
+        </div>
       </div>
     </div>
   );
