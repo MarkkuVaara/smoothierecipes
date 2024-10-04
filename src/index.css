@@ -429,43 +429,54 @@ p {
 /* Newsletter window */
 
 .newsletter-box {
+    display: flex;
     position: relative;
     width: 30%;
-    min-width: 100px;
-    max-width: 200px;
+    min-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
     height: auto;
     max-height: 80vh;
     margin-top: calc(125vh - 85vh - 20px);
-    background: gray;
+    background-color: lightgreen;
     border-radius: 8px;
-    padding: 60px;
+    padding: 20px;
     border: 1px solid black;
     overflow: auto;
 }
 
+.newsletter-texts > * {
+    font-size: 16px;
+    margin-left: 30px;
+    color: black;
+}
+
 .newsletter-close-icon {
-    content: 'C';
     cursor: pointer;
     position: absolute;
-    right: calc(7%);
-    bottom: 10px;
+    right: calc(5%);
+    bottom: 7px;
+}
+
+.newsletter-send-icon {
+    cursor: pointer;
+    position: absolute;
+    right: calc(25%);
+    bottom: 7px;
+}
+
+.newsletter-close-icon,
+.newsletter-send-icon {
     background: #ededed;
-    width: 35px;
+    width: 70px;
     height: 35px;
-    border-radius: 10%;
+    border-radius: 20%;
     line-height: 30px;
     text-align: center;
-    border: 3px solid #999;
-    font-size: 30px;
+    border: 3px solid darkgray;
 }
 
-.newsletter-content {
-    display: flex;
-}
-
-.newsletter-content > * {
-    margin: .1em;
-    padding: .3em;
-    flex: 1;
+.newsletter-close-icon > *,
+.newsletter-send-icon > * {
+    font-size: 20px;
 }
