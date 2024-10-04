@@ -17,6 +17,7 @@ import Recipes from './components/Recipes';
 import About from './components/About';
 import Blog from './components/Blog';
 import Popup from './components/Popup';
+import Newsletter from './components/Newsletter';
 
 const App = () => {
 
@@ -73,6 +74,10 @@ const App = () => {
       
       {popUp == "startwindow" &&
         <Popup handleClose={togglePopUp} />
+      }
+
+      {popUp == "letterwindow" &&
+        <Newsletter handleClose={togglePopUp} />
       }
 
       </Router>
