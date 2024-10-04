@@ -8,7 +8,7 @@ const Newsletter = (props) => {
       <div className="newsletter-box">
         <img className="applelogo" src={logo} alt={logo}></img>
         <div className="newsletter-texts">
-            <p>Subscribe, to keep in touch!</p>
+            <p><strong>Subscribe</strong>, to keep in touch!</p>
             <input default="Enter your e-mail here" />
         </div>
         <div className="newsletter-send-icon">

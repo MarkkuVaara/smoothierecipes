@@ -54,7 +54,7 @@ const App = () => {
 
       <div className="main">
         <Routes>
-          <Route path="/" element={<div><Home/></div>} />
+          <Route path="/" element={<div><Home newsletter={() => togglePopUp("letterwindow")}/></div>} />
           <Route path="/recipes" element={<div>
               <Recipes subpage={subpage}/>
             </div>} />
