@@ -130,7 +130,7 @@ p {
     margin-right: 10%;
     padding: 10px;
     padding-right: 20px;
-    background-color: rgb(39, 57, 7);
+    background-color: #3F2D17;
     border: 3px solid #A4D64D;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
@@ -145,7 +145,7 @@ p {
     margin-left: 10%;
     padding: 10px;
     padding-left: 20px;
-    background-color: rgb(39, 57, 7);
+    background-color: #3F2D17;
     border: 3px solid #A4D64D;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
@@ -452,7 +452,20 @@ p {
     width: 120px;
 }
 
-.newsletter-texts > * {
+.subscription-texts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.thumbimage {
+    margin-top: 20px;
+    height: 35px;
+    width: 35px;
+}
+
+.newsletter-texts > *,
+.subscription-texts > * {
     font-size: 18px;
     margin-left: 20px;
     padding-right: 0px;
