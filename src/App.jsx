@@ -18,6 +18,7 @@ import About from './components/About';
 import Blog from './components/Blog';
 import Popup from './components/Popup';
 import Newsletter from './components/Newsletter';
+import Subscription from './components/Subscription';
 
 const App = () => {
 
@@ -28,6 +29,10 @@ const App = () => {
   const togglePopUp = (dataName) => {
     setPopUp(dataName);
   };
+
+  const handleSubscription = () => {
+    setPopUp("subscriptionwindow");
+  }
 
   return (
 
@@ -77,7 +82,11 @@ const App = () => {
       }
 
       {popUp == "letterwindow" &&
-        <Newsletter handleClose={togglePopUp} />
+        <Newsletter handleClose={togglePopUp} handleSubscription={handleSubscription} />
+      }
+
+      {popUp == "subscriptionwindow" &&
+        <Subscription handleClose={togglePopUp} />
       }
 
       </Router>

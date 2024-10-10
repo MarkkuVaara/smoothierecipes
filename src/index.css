@@ -441,13 +441,21 @@ p {
     background-color: lightgreen;
     border-radius: 8px;
     padding: 20px;
+    padding-right: 0px;
     border: 1px solid black;
     overflow: auto;
+}
+
+.newsletter-applelogo {
+    padding-top: 10px;
+    height: 120px;
+    width: 120px;
 }
 
 .newsletter-texts > * {
     font-size: 18px;
     margin-left: 20px;
+    padding-right: 0px;
     color: black;
 }
 
