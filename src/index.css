@@ -239,15 +239,41 @@ p {
     text-align: justify;
     margin-top: 20px;
 }
- 
+
 .recipeimage {
     margin-top: 100px;
     margin-left: 5%;
     margin-right: 5%;
     height: 410px;
     width: 445px;
-    border: 5px solid #A4D64D;
     border-radius: 55px;
+}
+
+.subpageban > .recipeimage,
+.subpageban > .recipetext > .rectext {
+    border: 5px solid #A4D64D;
+}
+
+.subpageblue > .recipeimage,
+.subpageblue > .recipetext > .rectext {
+    border: 5px solid blue;
+}
+
+.subpagestraw > .recipeimage,
+.subpagestraw > .recipetext > .rectext {
+    border: 5px solid red;
+}
+
+.subpageban > .recipetext > h3 {
+    color: #A4D64D;
+}
+
+.subpageblue > .recipetext > h3 {
+    color: blue;
+}
+
+.subpagestraw > .recipetext > h3 {
+    color: red;
 }
 
 .recipetext {
@@ -264,7 +290,6 @@ p {
     margin-top: 20px;
     padding: 20px;
     padding-left: 30px;
-    border: 5px solid #A4D64D;
     border-radius: 60px;
 }
 
