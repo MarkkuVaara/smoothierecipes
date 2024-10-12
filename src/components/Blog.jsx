@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import Blogimage1 from '../images/blogimage1.jpg';
 import Blogimage2 from '../images/blogimage2.jpg';
+import Blogimage3 from '../images/blogimage3.jpg';
 
 const Blog = () => {
 
     return (
         <div className="blogpage">
             <div className="blogimages">
-                <img className="blogimage" src={Blogimage1} alt={Blogimage1} title="Simple smoothies in glass bottles" />
-                <img className="blogimage" src={Blogimage2} alt={Blogimage2} title="Banana and strawberry smoothies in jars" />
+                <img className="blogimage" src={Blogimage1} alt={Blogimage1} title="Banana and strawberry smoothies in jars" />
+                <img className="blogimage" src={Blogimage2} alt={Blogimage2} title="Simple smoothies in glass bottles" />
+                <img className="blogimage" src={Blogimage3} alt={Blogimage3} title="Banana and strawberry smoothies in jars" />
             </div>
             <div className="blogs">
                 <div className="blog">
