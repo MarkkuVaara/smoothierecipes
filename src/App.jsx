@@ -51,7 +51,7 @@ const App = () => {
         <Link to="/recipes" onClick={() => setSubtitle(<div className="subpagenav">
             <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button> 
             <button onClick={() => setSubpage(1)}><h3>BLUEBERRY</h3></button> 
-            <button onClick={() => setSubpage(2)}><h3 className={`title-${subpage}`}>STRAWBERRY</h3></button>
+            <button onClick={() => setSubpage(2)}><h3>STRAWBERRY</h3></button>
           </div>)} style={{ textDecoration: 'none' }}><h2>RECIPIES</h2></Link>
         <Link to="/about" onClick={() => setSubtitle(<h3>MEET THE TEAM</h3>)} style={{ textDecoration: 'none' }}><h2>ABOUT US</h2></Link>
         <Link to="/blog" onClick={() => setSubtitle(<h3>SMOOTHIE BLOG</h3>)} style={{ textDecoration: 'none' }}><h2>BLOG</h2></Link>
@@ -72,7 +72,7 @@ const App = () => {
         </Routes>
       </div>
 
-      <div className="footer">
+      <div className={`footer footer-${subpage}`}>
         <h4>FOLLOW US ON VARIOUS LOCATIONS</h4>
         <img className="footerimage" src={xxx} alt={xxx}></img>
         <img className="footerimage" src={fbook} alt={fbook}></img>

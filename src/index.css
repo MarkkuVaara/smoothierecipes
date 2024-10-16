@@ -62,11 +62,6 @@ p {
     border-bottom: 15px solid red;
 }
 
-.title-2 {
-    color: red;
-}
-
-
 .banner {
     display: flex;
     justify-content: space-between;
@@ -280,15 +275,15 @@ p {
     border: 5px solid red;
 }
 
-.subpageban > .recipetext > h3 {
+.subpageban > .recipetext > h2 {
     color: #A4D64D;
 }
 
-.subpageblue > .recipetext > h3 {
+.subpageblue > .recipetext > h2 {
     color: blue;
 }
 
-.subpagestraw > .recipetext > h3 {
+.subpagestraw > .recipetext > h2 {
     color: red;
 }
 
@@ -297,8 +292,7 @@ p {
     max-width: 70%;
 }
 
-.recipetext > h3 {
-    color: white;
+.recipetext > h2 {
     text-align: center;
 }
 
@@ -358,7 +352,18 @@ p {
     margin-bottom: 10px;
     margin-left: 1%;
     margin-right: 1%;
+}
+
+.footer-0 {
     border-top: 7px solid #A4D64D;
+}
+
+.footer-1 {
+    border-top: 7px solid blue;
+}
+
+.footer-2 {
+    border-top: 7px solid red;
 }
 
 .footer > * {

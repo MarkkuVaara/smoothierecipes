@@ -19,7 +19,7 @@ const Recipes = ({ subpage, onSlideChange }) => {
             <div className="recipe subpageban">
                 <img className="recipeimage" src={Banana} alt={Banana} title="Banana smoothie in a jar" />
                 <div className="recipetext">
-                    <h3>BANANAAAAAA!</h3>
+                    <h2>BANANAAAAAA!</h2>
                     <div className="rectext">
                         <strong><h4>INGREDIENTS:</h4></strong>
                         <h4>- 1 ripe banana</h4>
@@ -41,7 +41,7 @@ const Recipes = ({ subpage, onSlideChange }) => {
             <div className="recipe subpageblue">
                 <img className="recipeimage" src={Blueberry} alt={Blueberry} title="Blueberry smoothie in a jar" />
                 <div className="recipetext">
-                    <h3>Blueberriesss!!!</h3>
+                    <h2>BLUEBERRIESSS!!!</h2>
                     <div className="rectext">
                         <strong><h4>INGREDIENTS:</h4></strong>
                         <h4>- 1 cup of fresh or frozen blueberries</h4>
@@ -63,7 +63,7 @@ const Recipes = ({ subpage, onSlideChange }) => {
             <div className="recipe subpagestraw">
                 <img className="recipeimage" src={Strawberry} alt={Strawberry} title="Strawberry smoothie in a jar" />
                 <div className="recipetext">
-                    <h3>Strawberryyy!!!</h3>
+                    <h2>STRAWBERRYYY!!!</h2>
                     <div className="rectext">
                         <strong><h4>INGREDIENTS:</h4></strong>
                         <h4>- 1 cup of fresh or frozen strawberries</h4>
