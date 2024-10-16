@@ -9,12 +9,13 @@ import Strawberry from '../images/strawberry.jpg';
 import leftarrow from '../images/leftarrow.jpg';
 import rightarrow from '../images/rightarrow.jpg';
 
-const Recipes = ({ subpage }) => {
+const Recipes = ({ subpage, onSlideChange }) => {
 
     return (
         <div className="recipiespage">
             <Slider dots={false} infinite={true} speed={500} slidesToShow={1}
-                slidesToScroll={1} autoplay={false} autoplaySpeed={3000} initialSlide={subpage} key={subpage}>
+                slidesToScroll={1} autoplay={false} autoplaySpeed={3000} initialSlide={subpage} key={subpage}
+                beforeChange={(current, next) => onSlideChange(next)}>
             <div className="recipe subpageban">
                 <img className="recipeimage" src={Banana} alt={Banana} title="Banana smoothie in a jar" />
                 <div className="recipetext">

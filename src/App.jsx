@@ -34,6 +34,10 @@ const App = () => {
     setPopUp("subscriptionwindow");
   }
 
+  const handleSlideChange = (slideIndex) => {
+    setSubpage(slideIndex);
+  };
+
   return (
 
     <div className="mainapp">
@@ -47,13 +51,13 @@ const App = () => {
         <Link to="/recipes" onClick={() => setSubtitle(<div className="subpagenav">
             <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button> 
             <button onClick={() => setSubpage(1)}><h3>BLUEBERRY</h3></button> 
-            <button onClick={() => setSubpage(2)}><h3>STRAWBERRY</h3></button>
+            <button onClick={() => setSubpage(2)}><h3 className={`title-${subpage}`}>STRAWBERRY</h3></button>
           </div>)} style={{ textDecoration: 'none' }}><h2>RECIPIES</h2></Link>
         <Link to="/about" onClick={() => setSubtitle(<h3>MEET THE TEAM</h3>)} style={{ textDecoration: 'none' }}><h2>ABOUT US</h2></Link>
         <Link to="/blog" onClick={() => setSubtitle(<h3>SMOOTHIE BLOG</h3>)} style={{ textDecoration: 'none' }}><h2>BLOG</h2></Link>
       </div>
 
-      <div className="subtitle">
+      <div className={`subtitle recipe-${subpage}`}>
         {subtitle}
       </div>
 
@@ -61,7 +65,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<div><Home newsletter={() => togglePopUp("letterwindow")}/></div>} />
           <Route path="/recipes" element={<div>
-              <Recipes subpage={subpage}/>
+              <Recipes subpage={subpage} onSlideChange={handleSlideChange}/>
             </div>} />
           <Route path="/about" element={<div><About/></div>} />
           <Route path="/blog" element={<div><Blog/></div>} />
