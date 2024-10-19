@@ -23,7 +23,7 @@ import Subscription from './components/Subscription';
 const App = () => {
 
   const [subtitle, setSubtitle] = useState(<h3>WELCOME TO THE FRUITY FUEL!</h3>);
-  const [subpage, setSubpage] = useState(0);
+  const [subpage, setSubpage] = useState(3);
   const [popUp, setPopUp] = useState("startwindow");
 
   const togglePopUp = (dataName) => {
@@ -47,14 +47,14 @@ const App = () => {
         <div>
           <img className="applelogo" src={logo} alt={logo} />
         </div>
-        <Link to="/" onClick={() => setSubtitle(<h3>WELCOME TO THE FRUITY FUEL!</h3>)} style={{ textDecoration: 'none' }}><h2>HOME</h2></Link>
-        <Link to="/recipes" onClick={() => setSubtitle(<div className="subpagenav">
+        <Link to="/" onClick={() => { setSubtitle(<h3>WELCOME TO THE FRUITY FUEL!</h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>HOME</h2></Link>
+        <Link to="/recipes" onClick={() => { setSubtitle(<div className="subpagenav">
             <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button> 
             <button onClick={() => setSubpage(1)}><h3>BLUEBERRY</h3></button> 
             <button onClick={() => setSubpage(2)}><h3>STRAWBERRY</h3></button>
-          </div>)} style={{ textDecoration: 'none' }}><h2>RECIPIES</h2></Link>
-        <Link to="/about" onClick={() => setSubtitle(<h3>MEET THE TEAM</h3>)} style={{ textDecoration: 'none' }}><h2>ABOUT US</h2></Link>
-        <Link to="/blog" onClick={() => setSubtitle(<h3>SMOOTHIE BLOG</h3>)} style={{ textDecoration: 'none' }}><h2>BLOG</h2></Link>
+          </div>); setSubpage(0);} } style={{ textDecoration: 'none' }}><h2>RECIPIES</h2></Link>
+        <Link to="/about" onClick={() => { setSubtitle(<h3>MEET THE TEAM</h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>ABOUT US</h2></Link>
+        <Link to="/blog" onClick={() => { setSubtitle(<h3>SMOOTHIE BLOG</h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>BLOG</h2></Link>
       </div>
 
       <div className={`subtitle recipe-${subpage}`}>
