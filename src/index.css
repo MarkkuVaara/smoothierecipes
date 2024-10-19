@@ -51,15 +51,15 @@ p {
 }
 
 .recipe-0 {
-    border-bottom: 15px solid #A4D64D;
+    border-bottom: 15px solid #FBF799;
 }
 
 .recipe-1 {
-    border-bottom: 15px solid blue;
+    border-bottom: 15px solid #6F7ECE;
 }
 
 .recipe-2 {
-    border-bottom: 15px solid red;
+    border-bottom: 15px solid #C36060;
 }
 
 .banner {
@@ -262,29 +262,29 @@ p {
 
 .subpageban > .recipeimage,
 .subpageban > .recipetext > .rectext {
-    border: 5px solid #A4D64D;
+    border: 5px solid #FBF799;
 }
 
 .subpageblue > .recipeimage,
 .subpageblue > .recipetext > .rectext {
-    border: 5px solid blue;
+    border: 5px solid #6F7ECE;
 }
 
 .subpagestraw > .recipeimage,
 .subpagestraw > .recipetext > .rectext {
-    border: 5px solid red;
+    border: 5px solid #C36060;
 }
 
 .subpageban > .recipetext > h2 {
-    color: #A4D64D;
+    color: #FBF799;
 }
 
 .subpageblue > .recipetext > h2 {
-    color: blue;
+    color: #6F7ECE;
 }
 
 .subpagestraw > .recipetext > h2 {
-    color: red;
+    color: #C36060;
 }
 
 .recipetext {
@@ -325,6 +325,11 @@ p {
     border: 0px;
 }
 
+.subpagenav > button:hover > h3,
+.subpagenav > button:focus > h3 {
+    text-decoration: underline;
+}
+
 
 /* Arrows */
 
@@ -355,15 +360,15 @@ p {
 }
 
 .footer-0 {
-    border-top: 7px solid #A4D64D;
+    border-top: 7px solid #FBF799;
 }
 
 .footer-1 {
-    border-top: 7px solid blue;
+    border-top: 7px solid #6F7ECE;
 }
 
 .footer-2 {
-    border-top: 7px solid red;
+    border-top: 7px solid #C36060;
 }
 
 .footer > * {
