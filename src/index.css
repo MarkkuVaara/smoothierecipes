@@ -31,6 +31,18 @@ p {
     font-family: 'Playfair Display SC', serif;
 }
 
+@font-face {
+    font-family: 'Megrim';
+    src: url('./fonts/Megrim.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.megrimfont {
+    font-family: 'Megrim', sans-serif !important;
+    font-size: 36px;
+}
+
 
 /* Main styles */
 

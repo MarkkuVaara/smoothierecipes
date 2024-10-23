@@ -22,7 +22,7 @@ import Subscription from './components/Subscription';
 
 const App = () => {
 
-  const [subtitle, setSubtitle] = useState(<h3>WELCOME TO THE FRUITY FUEL!</h3>);
+  const [subtitle, setSubtitle] = useState(<h3>WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div></h3>);
   const [subpage, setSubpage] = useState(3);
   const [popUp, setPopUp] = useState("startwindow");
 
@@ -47,7 +47,7 @@ const App = () => {
         <div>
           <img className="applelogo" src={logo} alt={logo} />
         </div>
-        <Link to="/" onClick={() => { setSubtitle(<h3>WELCOME TO THE FRUITY FUEL!</h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>HOME</h2></Link>
+        <Link to="/" onClick={() => { setSubtitle(<h3>WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>HOME</h2></Link>
         <Link to="/recipes" onClick={() => { setSubtitle(<div className="subpagenav">
             <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button> 
             <button onClick={() => setSubpage(1)}><h3>BLUEBERRY</h3></button> 

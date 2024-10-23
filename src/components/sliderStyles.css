@@ -25,6 +25,10 @@
     cursor: pointer;
 }
 
+.custom-arrow:hover {
+    background-color: transparent;
+}
+
 .arrowcolor-0 {
     background-color: #FBF799;
 }
@@ -35,6 +39,21 @@
 
 .arrowcolor-2 {
     background-color: #C36060;
+}
+
+.arrowcolor-0:hover {
+    color: #FBF799;
+    border: 3px solid #FBF799;
+}
+
+.arrowcolor-1:hover {
+    color: #6F7ECE;
+    border: 3px solid #6F7ECE;;
+}
+
+.arrowcolor-2:hover {
+    color: #C36060;
+    border: 3px solid #C36060;
 }
 
 .prev-arrow {
