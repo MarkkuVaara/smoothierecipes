@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
-import PrevArrow from './PrevArrow';
-import NextArrow from './NextArrow';
+import "./sliderStyles.css";
 
 import Banana from '../images/banana.jpg';
 import Blueberry from '../images/blueberry.jpg';
@@ -12,12 +10,22 @@ import Strawberry from '../images/strawberry.jpg';
 
 const Recipes = ({ subpage, onSlideChange }) => {
 
+    const sliderRef = useRef(null);
+
+    const goToNext = () => {
+        sliderRef.current.slickNext();
+    };
+    
+    const goToPrev = () => {
+        sliderRef.current.slickPrev();
+    };
+
     return (
-        <div className="recipiespage">
+        <div className="recipiespage carousel-wrapper">
             <Slider dots={false} infinite={true} speed={500} slidesToShow={1}
                 slidesToScroll={1} autoplay={false} autoplaySpeed={3000} initialSlide={subpage} key={subpage}
                 beforeChange={(current, next) => onSlideChange(next)}
-                nextArrow={<NextArrow />} prevArrow={<PrevArrow/>} >
+                arrows={false} ref={sliderRef} >
             <div className="recipe subpageban">
                 <img className="recipeimage" src={Banana} alt={Banana} title="Banana smoothie in a jar" />
                 <div className="recipetext">
@@ -85,6 +93,14 @@ const Recipes = ({ subpage, onSlideChange }) => {
                 </div>
             </div>
             </Slider>
+            <div className="arrows-container">
+                <button className="arrow-button prev-button" onClick={goToPrev}>
+                    ◀ 
+                </button>
+                <button className="arrow-button next-button" onClick={goToNext}>
+                    ▶
+                </button>
+            </div>
         </div>
     )
 }
