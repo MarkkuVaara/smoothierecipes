@@ -1,32 +1,46 @@
 
 .carousel-wrapper {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .arrows-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .custom-arrow {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
-    background-color: #007bff;
-    color: #fff;
+    height: 50px;
+    width: 50px;
+    color: black;
+    font-size: 20px;
     border-radius: 50%;
+    border: 0px;
     padding: 10px;
     cursor: pointer;
 }
 
+.arrowcolor-0 {
+    background-color: #FBF799;
+}
+
+.arrowcolor-1 {
+    background-color: #6F7ECE;
+}
+
+.arrowcolor-2 {
+    background-color: #C36060;
+}
+
 .prev-arrow {
-    margin-left: 20px;
+    margin-left: 40%;
 }
 
 .next-arrow {
-    margin-right: 20px;
+    margin-right: 40%;
 }

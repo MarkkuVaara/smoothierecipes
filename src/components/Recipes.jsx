@@ -94,10 +94,10 @@ const Recipes = ({ subpage, onSlideChange }) => {
             </div>
             </Slider>
             <div className="arrows-container">
-                <button className="arrow-button prev-button" onClick={goToPrev}>
+                <button className={`custom-arrow arrowcolor-${subpage} prev-arrow`} onClick={goToPrev}>
                     ◀ 
                 </button>
-                <button className="arrow-button next-button" onClick={goToNext}>
+                <button className={`custom-arrow arrowcolor-${subpage} next-arrow`} onClick={goToNext}>
                     ▶
                 </button>
             </div>
