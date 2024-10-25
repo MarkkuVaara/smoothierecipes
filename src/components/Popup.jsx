@@ -7,9 +7,9 @@ const Popup = (props) => {
   return (
     <div className="popup-box">
       <div className="box">      
-        <h1>FRUITY</h1>
+        <h1 className="starttext">FRUITY</h1>
         <img className="startlogo" src={Apple} alt={Apple}></img>
-        <h1>FUEL</h1>
+        <h1 className="starttext">FUEL</h1>
         <div className="close-icon">
           <h2 className="close-icontext">Step in</h2>
           <img className="startarrow" src={Arrow} alt={Arrow} onClick={props.handleClose} ></img>

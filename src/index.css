@@ -39,8 +39,9 @@ p {
 }
 
 .megrimfont {
-    font-family: 'Megrim', sans-serif !important;
-    font-size: 36px;
+    display: inline-block;
+    font-family: 'Megrim', sans-serif;
+    font-size: 40px;
 }
 
 
@@ -347,21 +348,6 @@ p {
 }
 
 
-/* Arrows */
-
-.arrows {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.arrowimage {
-    height: 48px;
-    width: 48px;
-}
-
-
 /* Footer */
 
 .footer {
@@ -444,6 +430,10 @@ p {
     margin-right: 25%;
     text-align: center;
     font-size: 30px;
+}
+
+.starttext {
+    font-family: 'Megrim', sans-serif;
 }
 
 .startlogo {
