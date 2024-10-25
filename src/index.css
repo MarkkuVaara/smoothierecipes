@@ -119,6 +119,20 @@ p {
     width: 120px;
 }
 
+@media only screen and (max-width: 800px) {
+
+    .banner > * > h2 {
+        font-size: 20px;
+    }
+    .applelogo {
+        margin-top: 10px;
+        margin-right: 0px;
+        height: 80px;
+        width: 80px;
+    }
+
+}
+
 
 /* Frontpage */
 
@@ -350,6 +364,22 @@ p {
     color: white;
 }
 
+@media only screen and (max-width: 800px) {
+    
+    .recipe {
+        display: block !important;
+    }
+    .recipeimage {
+        margin-top: 40px;
+        height: 300px;
+        width: 325px;
+    }
+    .recipetext {
+        max-width: 90%;
+    }
+
+}
+
 
 /* Subpage navigation */
 
@@ -425,6 +455,7 @@ p {
     }
 
     .footerimage {
+        margin-top: 30px;
         height: 30px;
         width: 30px;
         border-radius: 15px;
@@ -618,4 +649,33 @@ p {
 .newsletter-close-icon > *,
 .newsletter-send-icon > * {
     font-size: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .newsletter-box {
+        padding-top: 10px;
+        min-height: 15vh;
+    }
+    .newsletter-applelogo {
+        height: 80px;
+        width: 80px;
+    }
+    .newsletter-texts > *,
+    .subscription-texts > * {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .subscription-texts {
+        margin-top: 10px;
+    }
+    .newsletter-close-icon,
+    .newsletter-send-icon {
+        width: 64px;
+        height: 30px;
+    }
+    .newsletter-close-icon > *,
+    .newsletter-send-icon > * {
+        font-size: 16px;
+    }
 }
