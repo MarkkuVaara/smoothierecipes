@@ -44,6 +44,17 @@ p {
     font-size: 40px;
 }
 
+@media only screen and (max-width: 800px) {
+
+    h1 { font-size: 40px; }
+    h2 { font-size: 30px; }
+    h3 { font-size: 20px; }
+    h4 { font-size: 18px; }
+    p { font-size: 16px; }
+    .megrimfont { display: block; }
+
+}
+
 
 /* Main styles */
 
@@ -138,6 +149,20 @@ p {
 .fronttext > h3,
 .fronttext > h2 {
     color: white;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .frontpage {
+        display: block;
+        text-align: center;
+    }
+
+    .smoothieimage {
+        height: 300px;
+        width: 300px;
+    }
+
 }
 
 
@@ -393,6 +418,20 @@ p {
     border-radius: 20px;
 }
 
+@media only screen and (max-width: 800px) {
+
+    .footer > * {
+        margin-right: 20px;
+    }
+
+    .footerimage {
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+    }
+
+}
+
 
 /* Start window */
 
@@ -493,6 +532,15 @@ p {
     width: 210px;
     border-radius: 20px;
     border: 5px solid #A4D64D;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .letterimage,
+    .letterimage:hover {
+        height: 120px;
+        width: 175px;
+    }
 }
 
 
