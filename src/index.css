@@ -192,7 +192,7 @@ p {
     display: flex;
     justify-content: space-between;
     text-align: justify;
-    max-height: 200px;
+    max-height: 100%;
     margin-bottom: 20px;
     margin-right: 10%;
     padding: 10px;
@@ -207,7 +207,7 @@ p {
     display: flex;
     justify-content: space-between;
     text-align: justify;
-    max-height: 200px;
+    max-height: 100%;
     margin-bottom: 20px;
     margin-left: 10%;
     padding: 10px;
@@ -244,6 +244,22 @@ p {
     width: 170px;
     border: 5px solid #A4D64D;
     border-radius: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .aboutpage {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .person,
+    .persontwo {
+        display: block;
+        min-height: 200px;
+        max-height: 100%;
+        border-radius: 50px;
+    }
+
 }
 
 
@@ -290,6 +306,24 @@ p {
 .blog > h3,
 .blog > p {
     color: white;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .blogpage {
+        display: block;
+        justify-content: space-around;
+    }
+    .blogimage {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .blogimage {
+        width: 95%;
+    }
+    .blogs {
+        max-width: 95%;
+    }
 }
 
 
@@ -402,6 +436,15 @@ p {
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 800px) {
+    
+    .subpagenav {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+}
+
 
 /* Footer */
 
@@ -453,14 +496,19 @@ p {
     .footer > * {
         margin-right: 20px;
     }
-
     .footerimage {
         margin-top: 30px;
         height: 30px;
         width: 30px;
         border-radius: 15px;
     }
-
+    .footer > * {
+        margin-right: 10px;
+    }
+    .footer > h4 {
+        font-size: 16px;
+    }
+    
 }
 
 

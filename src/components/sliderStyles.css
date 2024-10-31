@@ -63,3 +63,14 @@
 .next-arrow {
     margin-right: 40%;
 }
+
+@media only screen and (max-width: 800px) {
+
+    .prev-arrow {
+        margin-left: 15%;
+    }
+    .next-arrow {
+        margin-right: 15%;
+    }
+
+}
