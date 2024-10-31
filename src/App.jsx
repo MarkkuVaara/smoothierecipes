@@ -67,9 +67,12 @@ const App = () => {
           <img className="applelogo" src={logo} alt={logo} />
         </div>
         <button onClick={toggleSidebar} className="menu-btn">
-          Button
+          Menu
         </button>
         <div className={`mobile-nav ${isNavOpen ? 'open' : 'closed'}`}>
+          <button onClick={toggleSidebar} className="menu-btn close-btn">
+            Close
+          </button>
           <Link to="/" onClick={() => { setSubtitle(<h3>WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>HOME</h2></Link>
           <Link to="/recipes" onClick={() => { setSubtitle(<div className="subpagenav">
               <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button> 
