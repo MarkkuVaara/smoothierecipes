@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   BrowserRouter as Router,
   Routes, Route, Link
@@ -25,6 +25,11 @@ const App = () => {
   const [subtitle, setSubtitle] = useState(<h3>WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div></h3>);
   const [subpage, setSubpage] = useState(3);
   const [popUp, setPopUp] = useState("startwindow");
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const navRef = useRef(null);
+
+  const toggleSidebar = () => setIsNavOpen(!isNavOpen);
 
   const togglePopUp = (dataName) => {
     setPopUp(dataName);
@@ -55,6 +60,25 @@ const App = () => {
           </div>); setSubpage(0);} } style={{ textDecoration: 'none' }}><h2>RECIPIES</h2></Link>
         <Link to="/about" onClick={() => { setSubtitle(<h3>MEET THE TEAM</h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>ABOUT US</h2></Link>
         <Link to="/blog" onClick={() => { setSubtitle(<h3>SMOOTHIE BLOG</h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>BLOG</h2></Link>
+      </div>
+
+      <div className="mobile-banner">
+        <div>
+          <img className="applelogo" src={logo} alt={logo} />
+        </div>
+        <button onClick={toggleSidebar} className="menu-btn">
+          Button
+        </button>
+        <div className={`mobile-nav ${isNavOpen ? 'open' : 'closed'}`}>
+          <Link to="/" onClick={() => { setSubtitle(<h3>WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>HOME</h2></Link>
+          <Link to="/recipes" onClick={() => { setSubtitle(<div className="subpagenav">
+              <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button> 
+              <button onClick={() => setSubpage(1)}><h3>BLUEBERRY</h3></button> 
+              <button onClick={() => setSubpage(2)}><h3>STRAWBERRY</h3></button>
+            </div>); setSubpage(0);} } style={{ textDecoration: 'none' }}><h2>RECIPIES</h2></Link>
+          <Link to="/about" onClick={() => { setSubtitle(<h3>MEET THE TEAM</h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>ABOUT US</h2></Link>
+          <Link to="/blog" onClick={() => { setSubtitle(<h3>SMOOTHIE BLOG</h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>BLOG</h2></Link>
+        </div>
       </div>
 
       <div className={`subtitle recipe-${subpage}`}>
