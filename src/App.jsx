@@ -11,6 +11,7 @@ import fbook from './images/fbook.jpg';
 import lin from './images/lin.jpg';
 import ttok from './images/ttok.jpg';
 import insgram from './images/insgram.jpg';
+import menuicon from './images/menuicon.png';
 
 import Home from './components/Home';
 import Recipes from './components/Recipes';
@@ -57,7 +58,7 @@ const App = () => {
             <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button> 
             <button onClick={() => setSubpage(1)}><h3>BLUEBERRY</h3></button> 
             <button onClick={() => setSubpage(2)}><h3>STRAWBERRY</h3></button>
-          </div>); setSubpage(0);} } style={{ textDecoration: 'none' }}><h2>RECIPIES</h2></Link>
+          </div>); setSubpage(0);} } style={{ textDecoration: 'none' }}><h2>RECIPES</h2></Link>
         <Link to="/about" onClick={() => { setSubtitle(<h3>MEET THE TEAM</h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>ABOUT US</h2></Link>
         <Link to="/blog" onClick={() => { setSubtitle(<h3>SMOOTHIE BLOG</h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>BLOG</h2></Link>
       </div>
@@ -67,7 +68,7 @@ const App = () => {
           <img className="applelogo" src={logo} alt={logo} />
         </div>
         <button onClick={toggleSidebar} className="menu-btn">
-          Menu
+          <img className="menulogo" src={menuicon} alt={menuicon} />
         </button>
         <div className={`mobile-nav ${isNavOpen ? 'open' : 'closed'}`}>
           <button onClick={toggleSidebar} className="menu-btn close-btn">
@@ -78,7 +79,7 @@ const App = () => {
               <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button> 
               <button onClick={() => setSubpage(1)}><h3>BLUEBERRY</h3></button> 
               <button onClick={() => setSubpage(2)}><h3>STRAWBERRY</h3></button>
-            </div>); setSubpage(0);} } style={{ textDecoration: 'none' }}><h2>RECIPIES</h2></Link>
+            </div>); setSubpage(0);} } style={{ textDecoration: 'none' }}><h2>RECIPES</h2></Link>
           <Link to="/about" onClick={() => { setSubtitle(<h3>MEET THE TEAM</h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>ABOUT US</h2></Link>
           <Link to="/blog" onClick={() => { setSubtitle(<h3>SMOOTHIE BLOG</h3>); setSubpage(3); }} style={{ textDecoration: 'none' }}><h2>BLOG</h2></Link>
         </div>
