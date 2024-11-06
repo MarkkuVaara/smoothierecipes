@@ -27,7 +27,10 @@ const Recipes = ({ subpage, onSlideChange }) => {
                 beforeChange={(current, next) => onSlideChange(next)}
                 arrows={false} ref={sliderRef} >
             <div className="recipe subpageban">
-                <img className="recipeimage" src={Banana} alt={Banana} title="Banana smoothie in a jar" />
+                <div className="recipeimages">
+                    <img className="recipeimage" src={Banana} alt={Banana} title="Banana smoothie in a jar" />
+                    <p>Banana smoothie in a jar</p>
+                </div>
                 <div className="recipetext">
                     <h2>BANANAAAAAA!</h2>
                     <div className="rectext">
@@ -49,7 +52,10 @@ const Recipes = ({ subpage, onSlideChange }) => {
                 </div>
             </div>
             <div className="recipe subpageblue">
-                <img className="recipeimage" src={Blueberry} alt={Blueberry} title="Blueberry smoothie in a jar" />
+                <div className="recipeimages">
+                    <img className="recipeimage" src={Blueberry} alt={Blueberry} title="Blueberry smoothie in a jar" />
+                    <p>Blueberry smoothie in a jar</p>
+                </div>
                 <div className="recipetext">
                     <h2>BLUEBERRIESSS!!!</h2>
                     <div className="rectext">
@@ -71,7 +77,10 @@ const Recipes = ({ subpage, onSlideChange }) => {
                 </div>
             </div>
             <div className="recipe subpagestraw">
-                <img className="recipeimage" src={Strawberry} alt={Strawberry} title="Strawberry smoothie in a jar" />
+                <div className="recipeimages">
+                    <img className="recipeimage" src={Strawberry} alt={Strawberry} title="Strawberry smoothie in a jar" />
+                    <p>Strawberry smoothie in a jar</p>
+                </div>
                 <div className="recipetext">
                     <h2>STRAWBERRYYY!!!</h2>
                     <div className="rectext">
