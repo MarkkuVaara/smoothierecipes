@@ -54,6 +54,9 @@ const Blog = () => {
                     </div>
                 </div>
                 <div className="blog">
+                    <div className="blogimages">
+                        <img className="blogimage" src={Blogimage3} alt={Blogimage3} title="Banana and strawberry smoothies in jars" />
+                    </div>
                     <div className="blogtext"> 
                         <h3>Blog post 4</h3>
                         <p><strong>**More to come**</strong></p>

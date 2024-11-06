@@ -280,12 +280,12 @@ p {
 
 .blogs {
     min-width: 200px;
-    max-width: 95%;
 }
 
 .blog {
     display: flex;
     text-align: justify;
+    justify-content: space-between;
 }
 
 .blogimages {
@@ -297,25 +297,26 @@ p {
     margin-left: 5%;
     margin-right: 5%;
     height: 400px;
-    width: 250px;
+    width: 350px;
     border: 3px solid #A4D64D;
     border-radius: 40px;
 }
 
 .blogtext {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
     margin-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    min-height: 400px;
+    min-height: 200px;
+    min-width: 50%;
     border: 3px solid #A4D64D;
     border-radius: 50px;
 }
 
-.blog > h3,
-.blog > p {
+.blogtext > h3,
+.blogtext > p {
     color: white;
 }
 
