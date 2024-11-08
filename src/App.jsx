@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import {
-  BrowserRouter as Router,
-  Routes, Route, Link
+  Routes, Route, Link,
+  useNavigate
 } from 'react-router-dom';
 
 import logo from './images/apple_logo.png';
@@ -44,14 +44,19 @@ const App = () => {
     setSubpage(slideIndex);
   };
 
+  const navigate = useNavigate();
+
+  const gotoHome = () => {
+    navigate('/');
+  }
+
   return (
 
     <div className="mainapp">
-      <Router>
 
       <div className="banner">
         <div>
-          <img className="applelogo" src={logo} alt={logo} />
+          <img className="applelogo" src={logo} alt={logo} onClick={() => { gotoHome(); setSubtitle(<h3>WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); setSubpage(3); } } />
         </div>
         <Link to="/" className="linkStyle" onClick={() => { setSubtitle(<h3>WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); setSubpage(3); }} ><h2>HOME</h2></Link>
         <Link to="/recipes" className="linkStyle" onClick={() => { setSubtitle(<div className="subpagenav">
@@ -65,7 +70,7 @@ const App = () => {
 
       <div className="mobile-banner">
         <div>
-          <img className="applelogo" src={logo} alt={logo} />
+          <img className="applelogo" src={logo} alt={logo} onClick={() => { gotoHome(); setSubtitle(<h3>WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); setSubpage(3); } } />
         </div>
         <button onClick={toggleSidebar} className="menu-btn">
           <img className="menulogo" src={menuicon} alt={menuicon} />
@@ -121,7 +126,6 @@ const App = () => {
         <Subscription handleClose={togglePopUp} />
       }
 
-      </Router>
     </div>
 
   )
