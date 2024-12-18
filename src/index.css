@@ -611,6 +611,10 @@ p {
     font-size: 30px;
 }
 
+.close-icontext {
+    margin-left: 7%;
+}
+
 .starttext {
     font-family: 'Megrim', sans-serif;
 }
@@ -620,26 +624,26 @@ p {
     margin-top: 15px;
     height: 250px;
     width: 250px;
-    animation: fadeInOut 2s infinite;
-    transition-timing-function: ease-in-out;
-}
-
-@keyframes fadeInOut {
-    0% {
-        opacity: 0.2;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.2;
-    }
 }
 
 .startarrow {
     cursor: pointer;
     height: 116px;
     width: 126px;
+    animation: fadeInOut 2s infinite;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
 }
 
 

@@ -37,6 +37,7 @@ const App = () => {
   };
 
   const handleSubscription = () => {
+    alert("Boop! (Here e-mail check)");
     setPopUp("subscriptionwindow");
   }
 
