@@ -23,7 +23,7 @@ import Subscription from './components/Subscription';
 
 const App = () => {
 
-  const [subtitle, setSubtitle] = useState(<h3>WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div></h3>);
+  const [subtitle, setSubtitle] = useState(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div></h3>);
   const [subpage, setSubpage] = useState(3);
   const [popUp, setPopUp] = useState("startwindow");
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -58,10 +58,10 @@ const App = () => {
       <div className="banner">
         <div>
           <img className="applelogo" src={logo} alt={logo} onClick={() => { gotoHome(); 
-              setSubtitle(<h3>WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); 
+              setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); 
               setSubpage(3); } } />
         </div>
-        <Link to="/" className="linkStyle" onClick={() => { setSubtitle(<h3>WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); 
+        <Link to="/" className="linkStyle" onClick={() => { setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); 
           setSubpage(3); }} ><h2>HOME</h2></Link>
         <Link to="/recipes" className="linkStyle" onClick={() => { setSubtitle(<div className="subpagenav">
             <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button> 
@@ -77,7 +77,7 @@ const App = () => {
       <div className="mobile-banner">
         <div>
           <img className="applelogo" src={logo} alt={logo} onClick={() => { gotoHome(); 
-            setSubtitle(<h3>WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); 
+            setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); 
             setSubpage(3); } } />
         </div>
         <button onClick={toggleSidebar} className="menu-btn">
@@ -87,7 +87,7 @@ const App = () => {
           <button onClick={toggleSidebar} className="menu-btn close-btn">
             Close
           </button>
-          <Link to="/" className="linkStyle" onClick={() => { setSubtitle(<h3>WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); 
+          <Link to="/" className="linkStyle" onClick={() => { setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); 
             setSubpage(3); 
             toggleSidebar(); }} ><h2>HOME</h2></Link>
           <Link to="/recipes" className="linkStyle" onClick={() => { setSubtitle(<div className="subpagenav">

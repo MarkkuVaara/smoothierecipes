@@ -38,10 +38,14 @@ p {
     font-style: normal;
 }
 
+.frontfont {
+    font-size: 40px;
+}
+
 .megrimfont {
     display: inline-block;
     font-family: 'Megrim', sans-serif;
-    font-size: 40px;
+    font-size: 48px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -51,7 +55,8 @@ p {
     h3 { font-size: 20px; }
     h4 { font-size: 18px; }
     p { font-size: 16px; }
-    .megrimfont { display: block; }
+    .frontfont { font-size: 30px; }
+    .megrimfont { display: block; font-size: 40px; }
 
 }
 
@@ -735,6 +740,7 @@ p {
 }
 
 .newsletter-close-icon {
+    display: flex;
     cursor: pointer;
     position: absolute;
     right: calc(5%);
@@ -751,7 +757,7 @@ p {
 .newsletter-close-icon,
 .newsletter-send-icon {
     background: #ededed;
-    width: 70px;
+    width: 75px;
     height: 35px;
     border-radius: 20%;
     line-height: 30px;
@@ -759,10 +765,26 @@ p {
     border: 3px solid darkgray;
 }
 
+.newsletter-close-icon:hover,
+.newsletter-send-icon:hover {
+    font-weight: bold;
+    border: 3px solid black;
+}
+
 .newsletter-close-icon > *,
 .newsletter-send-icon > * {
-    font-size: 20px;
+    font-size: 18px;
 }
+
+.newsletter-close-icon > img {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10px;
+    width: 17px;
+    height: 17px;
+    border: solid 1px gray;
+}
+
 
 @media only screen and (max-width: 800px) {
 
@@ -789,7 +811,7 @@ p {
     }
     .newsletter-close-icon > *,
     .newsletter-send-icon > * {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
