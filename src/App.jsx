@@ -24,7 +24,7 @@ import Subscription from './components/Subscription';
 const App = () => {
 
   const [subtitle, setSubtitle] = useState(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div></h3>);
-  const [subpage, setSubpage] = useState(3);
+  const [subpage, setSubpage] = useState(5);
   const [popUp, setPopUp] = useState("startwindow");
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -59,26 +59,28 @@ const App = () => {
         <div>
           <img className="applelogo" src={logo} alt="Fruity Fuel logo" onClick={() => { gotoHome();
               setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>);
-              setSubpage(3); } } />
+              setSubpage(5); } } />
         </div>
-        <Link to="/" className="linkStyle" onClick={() => { setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); 
-          setSubpage(3); }} ><h2>HOME</h2></Link>
+        <Link to="/" className="linkStyle" onClick={() => { setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>);
+          setSubpage(5); }} ><h2>HOME</h2></Link>
         <Link to="/recipes" className="linkStyle" onClick={() => { setSubtitle(<div className="subpagenav">
-            <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button> 
-            <button onClick={() => setSubpage(1)}><h3>BLUEBERRY</h3></button> 
+            <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button>
+            <button onClick={() => setSubpage(1)}><h3>BLUEBERRY</h3></button>
             <button onClick={() => setSubpage(2)}><h3>STRAWBERRY</h3></button>
+            <button onClick={() => setSubpage(3)}><h3>RASPBERRY</h3></button>
+            <button onClick={() => setSubpage(4)}><h3>MANGO</h3></button>
           </div>); setSubpage(0); }} ><h2>RECIPES</h2></Link>
-        <Link to="/about" className="linkStyle" onClick={() => { setSubtitle(<h3>MEET THE TEAM</h3>); 
-          setSubpage(3); }} ><h2>ABOUT US</h2></Link>
-        <Link to="/blog" className="linkStyle" onClick={() => { setSubtitle(<h3>SMOOTHIE BLOG</h3>); 
-          setSubpage(3); }} ><h2>BLOG</h2></Link>
+        <Link to="/about" className="linkStyle" onClick={() => { setSubtitle(<h3>MEET THE TEAM</h3>);
+          setSubpage(5); }} ><h2>ABOUT US</h2></Link>
+        <Link to="/blog" className="linkStyle" onClick={() => { setSubtitle(<h3>SMOOTHIE BLOG</h3>);
+          setSubpage(5); }} ><h2>BLOG</h2></Link>
       </div>
 
       <div className="mobile-banner">
         <div>
           <img className="applelogo" src={logo} alt="Fruity Fuel logo" onClick={() => { gotoHome();
             setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>);
-            setSubpage(3); } } />
+            setSubpage(5); } } />
         </div>
         <button onClick={toggleSidebar} className="menu-btn">
           <img className="menulogo" src={menuicon} alt="Menu" />
@@ -87,19 +89,21 @@ const App = () => {
           <button onClick={toggleSidebar} className="menu-btn close-btn">
             Close
           </button>
-          <Link to="/" className="linkStyle" onClick={() => { setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); 
-            setSubpage(3); 
+          <Link to="/" className="linkStyle" onClick={() => { setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>);
+            setSubpage(5);
             toggleSidebar(); }} ><h2>HOME</h2></Link>
           <Link to="/recipes" className="linkStyle" onClick={() => { setSubtitle(<div className="subpagenav">
-              <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button> 
-              <button onClick={() => setSubpage(1)}><h3>BLUEBERRY</h3></button> 
+              <button onClick={() => setSubpage(0)}><h3>BANANA</h3></button>
+              <button onClick={() => setSubpage(1)}><h3>BLUEBERRY</h3></button>
               <button onClick={() => setSubpage(2)}><h3>STRAWBERRY</h3></button>
+              <button onClick={() => setSubpage(3)}><h3>RASPBERRY</h3></button>
+              <button onClick={() => setSubpage(4)}><h3>MANGO</h3></button>
             </div>); setSubpage(0); toggleSidebar(); }} ><h2>RECIPES</h2></Link>
-          <Link to="/about" className="linkStyle" onClick={() => { setSubtitle(<h3>MEET THE TEAM</h3>); 
-            setSubpage(3); 
+          <Link to="/about" className="linkStyle" onClick={() => { setSubtitle(<h3>MEET THE TEAM</h3>);
+            setSubpage(5);
             toggleSidebar(); }} ><h2>ABOUT US</h2></Link>
-          <Link to="/blog" className="linkStyle" onClick={() => { setSubtitle(<h3>SMOOTHIE BLOG</h3>); 
-            setSubpage(3); 
+          <Link to="/blog" className="linkStyle" onClick={() => { setSubtitle(<h3>SMOOTHIE BLOG</h3>);
+            setSubpage(5);
             toggleSidebar(); }} ><h2>BLOG</h2></Link>
         </div>
       </div>
