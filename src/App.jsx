@@ -57,8 +57,8 @@ const App = () => {
 
       <div className="banner">
         <div>
-          <img className="applelogo" src={logo} alt={logo} onClick={() => { gotoHome(); 
-              setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); 
+          <img className="applelogo" src={logo} alt="Fruity Fuel logo" onClick={() => { gotoHome();
+              setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>);
               setSubpage(3); } } />
         </div>
         <Link to="/" className="linkStyle" onClick={() => { setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); 
@@ -76,12 +76,12 @@ const App = () => {
 
       <div className="mobile-banner">
         <div>
-          <img className="applelogo" src={logo} alt={logo} onClick={() => { gotoHome(); 
-            setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>); 
+          <img className="applelogo" src={logo} alt="Fruity Fuel logo" onClick={() => { gotoHome();
+            setSubtitle(<h3 className="frontfont">WELCOME TO THE <div className="megrimfont">FRUITY FUEL!</div> </h3>);
             setSubpage(3); } } />
         </div>
         <button onClick={toggleSidebar} className="menu-btn">
-          <img className="menulogo" src={menuicon} alt={menuicon} />
+          <img className="menulogo" src={menuicon} alt="Menu" />
         </button>
         <div className={`mobile-nav ${isNavOpen ? 'open' : 'closed'}`}>
           <button onClick={toggleSidebar} className="menu-btn close-btn">
@@ -121,11 +121,11 @@ const App = () => {
 
       <div className={`footer footer-${subpage}`}>
         <h4>FOLLOW US ON VARIOUS LOCATIONS</h4>
-        <img className="footerimage" src={xxx} alt={xxx}></img>
-        <img className="footerimage" src={fbook} alt={fbook}></img>
-        <img className="footerimage" src={lin} alt={lin}></img>
-        <img className="footerimage" src={ttok} alt={ttok}></img>
-        <img className="footerimage" src={insgram} alt={insgram}></img>
+        <img className="footerimage" src={xxx} alt="X (Twitter)"></img>
+        <img className="footerimage" src={fbook} alt="Facebook"></img>
+        <img className="footerimage" src={lin} alt="LinkedIn"></img>
+        <img className="footerimage" src={ttok} alt="TikTok"></img>
+        <img className="footerimage" src={insgram} alt="Instagram"></img>
       </div>
       
       {popUp == "startwindow" &&

@@ -8,14 +8,14 @@ const Subscription = (props) => {
   return (
     <div className="popup-box">
       <div className="newsletter-box">
-        <img className="newsletter-applelogo" src={logo} alt={logo}></img>
+        <img className="newsletter-applelogo" src={logo} alt="Fruity Fuel logo"></img>
         <div className="subscription-texts">
-            <img className="thumbimage" src={thumbsup} alt={thumbsup}></img>
+            <img className="thumbimage" src={thumbsup} alt="Thumbs up"></img>
             <p><strong>Thank you</strong> for your support!</p>
         </div>  
         <div className="newsletter-close-icon" onClick={props.handleClose}>
           <div>Close</div>
-          <img src={close} alt={close}></img>
+          <img src={close} alt="Close"></img>
         </div>
       </div>
     </div>

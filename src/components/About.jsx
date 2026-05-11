@@ -9,7 +9,7 @@ const About = () => {
     return (
         <div className="aboutpage">
             <div className="person">
-                <img className="personimage" src={sauliholappa} alt={sauliholappa} title="Sauli Holappa" />
+                <img className="personimage" src={sauliholappa} alt="Sauli Holappa" title="Sauli Holappa" />
                 <div className="persontext">
                     <h3>SAULI HOLAPPA, UI/UX DESIGNER</h3>
                     <p>Meet the designer. Creative force behind our project. Believes in design that's not just visually appealing but also enhances the user journey. By focusing on usability, accessibility, and user satisfaction, he creates designs that resonate with users and drive results.</p>
@@ -20,7 +20,7 @@ const About = () => {
                     <h3>MARKKU VAARA, DEVELOPER</h3>
                     <p>Markku believes in clean, efficient, and scalable code. By focusing on performance, security, and maintainability, he ensures that every line of code contributes to a robust and reliable product. From implementing complex features to optimizing performance, he has played a crucial role in bringing the current project to life.</p>
                 </div>
-                <img className="personimage" src={markkuvaara} alt={markkuvaara} title="Markku Vaara" />
+                <img className="personimage" src={markkuvaara} alt="Markku Vaara" title="Markku Vaara" />
             </div>
         </div>
     )

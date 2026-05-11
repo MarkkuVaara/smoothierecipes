@@ -7,7 +7,7 @@ const Newsletter = (props) => {
   return (
     <div className="popup-box">
       <div className="newsletter-box">
-        <img className="newsletter-applelogo" src={logo} alt={logo}></img>
+        <img className="newsletter-applelogo" src={logo} alt="Fruity Fuel logo"></img>
         <div className="newsletter-texts">
             <p><strong>Subscribe</strong>, to keep in touch!</p>
             <input placeholder="Enter your e-mail here" />
@@ -17,7 +17,7 @@ const Newsletter = (props) => {
         </div>   
         <div className="newsletter-close-icon" onClick={props.handleClose}>
           <div className="close-icontext">Close</div>
-          <img src={close} alt={close}></img>
+          <img src={close} alt="Close"></img>
         </div>
       </div>
     </div>

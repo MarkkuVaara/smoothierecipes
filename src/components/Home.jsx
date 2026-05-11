@@ -6,7 +6,7 @@ const Home = (props) => {
     return (
         <div className="frontpage">
             <div className="smoothieimages">
-                <img className="smoothieimage" src={Frontpagesmoothie} alt={Frontpagesmoothie} title="Smoothies in glasses"/>
+                <img className="smoothieimage" src={Frontpagesmoothie} alt="Smoothies in glasses" title="Smoothies in glasses"/>
                 <p>Smoothies in glasses</p>
             </div>
             <div className="fronttext">

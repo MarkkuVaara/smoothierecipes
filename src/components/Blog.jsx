@@ -10,12 +10,12 @@ const Blog = () => {
             <div className="blogs">
                 <div className="blog">
                     <div className="blogimages">
-                        <img className="blogimage" src={Blogimage1} alt={Blogimage1} title="Banana and strawberry smoothies in jars" />
+                        <img className="blogimage" src={Blogimage1} alt="Banana and strawberry smoothies in jars" title="Banana and strawberry smoothies in jars" />
                         <p>Banana and strawberry smoothies in jars</p>
                     </div>
                     <div className="blogtext">
                         <h3>Blog post 1</h3>
-                        <p><strong>**Kickstart Your Day with a Berrylicious Smoothie**</strong></p>
+                        <p><strong>Kickstart Your Day with a Berrylicious Smoothie</strong></p>
                         <p>Smoothies are the ultimate way to start your day with a burst of energy. 
                             A classic favorite is the strawberry smoothie - simple, delicious, and packed with nutrients. 
                             With just a few ingredients, you can blend up a refreshing drink that's both satisfying and healthy.</p>
@@ -29,18 +29,18 @@ const Blog = () => {
                 </div>
                 <div className="blog">
                     <div className="blogimages">
-                        <img className="blogimage" src={Blogimage2} alt={Blogimage2} title="Simple smoothies in glass bottles" />
+                        <img className="blogimage" src={Blogimage2} alt="Simple smoothies in glass bottles" title="Simple smoothies in glass bottles" />
                         <p>Simple smoothies in glass bottles</p>
                     </div>
                     <div className="blogtext">
                         <h3>Blog post 2</h3>
-                        <p><strong>**Why Smoothies Are You New Best Friend **</strong></p>
+                        <p><strong>Why Smoothies Are Your New Best Friend</strong></p>
                         <p>If you're looking for a quick and easy way to pack more fruits and veggies into your diet,
                             smoothies are your new best friend. Not only are they incredibly versatile, but they're also a 
                             delicious way to get a hefty dose of vitamins and antioxidants without much effort.
                         </p>
                         <p>Take the strawberry smoothie, for example. It's a classic choice that's both nutritious and tasty.
-                            With the natural sweeetness of strawberries, a bit of yogurt for probiotics, and a banana for potassium,
+                            With the natural sweetness of strawberries, a bit of yogurt for probiotics, and a banana for potassium,
                             this smoothie is a powerhouse of nutrition. Whether you're trying to eat healthier or just need a quick 
                             meal on the go, smoothies are perfect solution. Blend, sip, and enjoy!
                         </p>
@@ -48,22 +48,22 @@ const Blog = () => {
                 </div>
                 <div className="blog">
                     <div className="blogimages">
-                        <img className="blogimage" src={Blogimage3} alt={Blogimage3} title="Banana and strawberry smoothies in jars" />
+                        <img className="blogimage" src={Blogimage3} alt="Banana and strawberry smoothies in jars" title="Banana and strawberry smoothies in jars" />
                         <p>Banana and strawberry smoothies in jars</p>
                     </div>
                     <div className="blogtext"> 
                         <h3>Blog post 3</h3>
-                        <p><strong>**More to come**</strong></p>
+                        <p><strong>More to come</strong></p>
                     </div>
                 </div>
                 <div className="blog">
                     <div className="blogimages">
-                        <img className="blogimage" src={Blogimage3} alt={Blogimage3} title="Banana and strawberry smoothies in jars" />
+                        <img className="blogimage" src={Blogimage3} alt="Banana and strawberry smoothies in jars" title="Banana and strawberry smoothies in jars" />
                         <p>Banana and strawberry smoothies in jars</p>
                     </div>
                     <div className="blogtext"> 
                         <h3>Blog post 4</h3>
-                        <p><strong>**More to come**</strong></p>
+                        <p><strong>More to come</strong></p>
                     </div>
                 </div>
             </div>

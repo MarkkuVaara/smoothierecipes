@@ -516,7 +516,7 @@ p {
 
 .footer {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     text-align: center;
     height: 85px;
     margin-top: 20px;
@@ -560,7 +560,7 @@ p {
 @media only screen and (max-width: 800px) {
 
     .footer > * {
-        margin-right: 20px;
+        margin-right: 10px;
     }
     .footerimage {
         margin-top: 30px;
@@ -568,13 +568,10 @@ p {
         width: 30px;
         border-radius: 15px;
     }
-    .footer > * {
-        margin-right: 10px;
-    }
     .footer > h4 {
         font-size: 16px;
     }
-    
+
 }
 
 
@@ -637,6 +634,12 @@ p {
     width: 126px;
     animation: fadeInOut 2s infinite;
     transition-timing-function: ease-in-out;
+}
+
+@media only screen and (max-width: 800px) {
+    .box > h1 {
+        font-size: 60px;
+    }
 }
 
 @keyframes fadeInOut {
@@ -783,6 +786,18 @@ p {
     width: 17px;
     height: 17px;
     border: solid 1px gray;
+}
+
+.newsletter-texts input {
+    margin-top: 10px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #888;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #333;
 }
 
 
