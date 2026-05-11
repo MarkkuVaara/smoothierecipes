@@ -7,6 +7,8 @@ import "./sliderStyles.css";
 import Banana from '../images/banana.jpg';
 import Blueberry from '../images/blueberry.jpg';
 import Strawberry from '../images/strawberry.jpg';
+import Raspberry from '../images/raspberry.jpg';
+import Mango from '../images/mango.jpg';
 
 const Recipes = ({ subpage, onSlideChange }) => {
 
@@ -94,6 +96,56 @@ const Recipes = ({ subpage, onSlideChange }) => {
                     <div className="rectext">
                         <h4><strong>INSTRUCTIONS:</strong></h4>
                         <h4>1. Place the strawberries in the blender.</h4>
+                        <h4>2. Add the milk, yogurt, and honey or maple syrup if you want a bit of sweetness.</h4>
+                        <h4>3. Toss in a handful of ice cubes.</h4>
+                        <h4>4. Blend until smooth and creamy.</h4>
+                        <h4>5. Pour into a glass and enjoy!</h4>
+                    </div>
+                </div>
+            </div>
+            <div className="recipe subpageraspberry">
+                <div className="recipeimages">
+                    <img className="recipeimage" src={Raspberry} alt="Raspberry smoothie in a jar" title="Raspberry smoothie in a jar" />
+                    <p>Raspberry smoothie in a jar</p>
+                </div>
+                <div className="recipetext">
+                    <h2>RASPBERRYYY!!!</h2>
+                    <div className="rectext">
+                        <h4><strong>INGREDIENTS:</strong></h4>
+                        <h4>- 1 cup of fresh or frozen raspberries</h4>
+                        <h4>- 1 cup of milk (or almond milk for a dairy-free option)</h4>
+                        <h4>- 1/2 cup yogurt (plain or vanilla)</h4>
+                        <h4>- 1 tablespoon honey or maple syrup (optional)</h4>
+                        <h4>- A handful of ice cubes</h4>
+                    </div>
+                    <div className="rectext">
+                        <h4><strong>INSTRUCTIONS:</strong></h4>
+                        <h4>1. Place the raspberries in a blender.</h4>
+                        <h4>2. Add the milk, yogurt, and honey or maple syrup if you want a bit of sweetness.</h4>
+                        <h4>3. Toss in a handful of ice cubes.</h4>
+                        <h4>4. Blend until smooth and creamy.</h4>
+                        <h4>5. Pour into a glass and enjoy!</h4>
+                    </div>
+                </div>
+            </div>
+            <div className="recipe subpagemango">
+                <div className="recipeimages">
+                    <img className="recipeimage" src={Mango} alt="Mango smoothie in a jar" title="Mango smoothie in a jar" />
+                    <p>Mango smoothie in a jar</p>
+                </div>
+                <div className="recipetext">
+                    <h2>MANGOOOO!!!</h2>
+                    <div className="rectext">
+                        <h4><strong>INGREDIENTS:</strong></h4>
+                        <h4>- 1 cup of fresh or frozen mango chunks</h4>
+                        <h4>- 1 cup of milk (or coconut milk for a tropical twist)</h4>
+                        <h4>- 1/2 cup yogurt (plain or vanilla)</h4>
+                        <h4>- 1 tablespoon honey or maple syrup (optional)</h4>
+                        <h4>- A handful of ice cubes</h4>
+                    </div>
+                    <div className="rectext">
+                        <h4><strong>INSTRUCTIONS:</strong></h4>
+                        <h4>1. Peel and cube the mango, or use frozen chunks.</h4>
                         <h4>2. Add the milk, yogurt, and honey or maple syrup if you want a bit of sweetness.</h4>
                         <h4>3. Toss in a handful of ice cubes.</h4>
                         <h4>4. Blend until smooth and creamy.</h4>

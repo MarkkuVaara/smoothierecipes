@@ -41,6 +41,14 @@
     background-color: #C36060;
 }
 
+.arrowcolor-3 {
+    background-color: #D9527A;
+}
+
+.arrowcolor-4 {
+    background-color: #F5A22A;
+}
+
 .arrowcolor-0:hover {
     color: #FBF799;
     border: 3px solid #FBF799;
@@ -48,12 +56,22 @@
 
 .arrowcolor-1:hover {
     color: #6F7ECE;
-    border: 3px solid #6F7ECE;;
+    border: 3px solid #6F7ECE;
 }
 
 .arrowcolor-2:hover {
     color: #C36060;
     border: 3px solid #C36060;
+}
+
+.arrowcolor-3:hover {
+    color: #D9527A;
+    border: 3px solid #D9527A;
+}
+
+.arrowcolor-4:hover {
+    color: #F5A22A;
+    border: 3px solid #F5A22A;
 }
 
 .prev-arrow {

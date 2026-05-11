@@ -92,6 +92,14 @@ p {
 }
 
 .recipe-3 {
+    border-bottom: 15px solid #D9527A;
+}
+
+.recipe-4 {
+    border-bottom: 15px solid #F5A22A;
+}
+
+.recipe-5 {
     border-bottom: 15px solid #A4D64D;
 }
 
@@ -418,6 +426,16 @@ p {
     border: 5px solid #C36060;
 }
 
+.subpageraspberry > .recipeimage,
+.subpageraspberry > .recipetext > .rectext {
+    border: 5px solid #D9527A;
+}
+
+.subpagemango > .recipeimage,
+.subpagemango > .recipetext > .rectext {
+    border: 5px solid #F5A22A;
+}
+
 .subpageban > .recipetext > h2 {
     color: #FBF799;
 }
@@ -428,6 +446,14 @@ p {
 
 .subpagestraw > .recipetext > h2 {
     color: #C36060;
+}
+
+.subpageraspberry > .recipetext > h2 {
+    color: #D9527A;
+}
+
+.subpagemango > .recipetext > h2 {
+    color: #F5A22A;
 }
 
 .recipetext {
@@ -481,8 +507,8 @@ p {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .subpagenav > button {
@@ -538,6 +564,14 @@ p {
 }
 
 .footer-3 {
+    border-top: 7px solid #D9527A;
+}
+
+.footer-4 {
+    border-top: 7px solid #F5A22A;
+}
+
+.footer-5 {
     border-top: 7px solid #A4D64D;
 }
 
